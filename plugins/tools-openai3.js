@@ -27,7 +27,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API')
       }
 
-      await conn.sendButton(m.chat,result, author, '', [['Go with Chatgpt', `.gpt ${text}`]], null, [['Follow Me', `https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11`]], m)
+      await conn.sendButton2(m.chat,result, author, '', [['📚𝘾𝙃𝘼𝙏𝙂𝙋𝙏💟', `.gpt ${text}`]], null, [['𝙁𝙊𝙇𝙇𝙊𝙒 𝙈𝙀🪀', `https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11`]], m)
       m.react('✅')
     } catch (error) {
       console.error('Error from the first API:', error)
@@ -41,7 +41,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let data = await response.json()
       let result = data.completion
 
-      await conn.sendButton(m.chat,result, author, '', [['Go with Chatgpt', `.gpt ${text}`]], null, [['Follow Me', `https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11`]], m)
+      await conn.sendButton2(m.chat,result, author, '', [['📚𝘾𝙃𝘼𝙏𝙂𝙋𝙏💟', `.gpt ${text}`]], null, [['𝙁𝙊𝙇𝙇𝙊𝙒 𝙈𝙀🪀', `https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11`]], m)
       m.react('✅')
     }
   } catch (error) {
