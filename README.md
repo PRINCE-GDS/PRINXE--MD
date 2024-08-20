@@ -50,8 +50,11 @@
 
 ****
  ### <br>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/PRINXE-MD) 
-
+ <div align="left">
+  <a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/Bypass">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+  </a>
+</div>
  
  
  ### <br>
