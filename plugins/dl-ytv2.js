@@ -1,4 +1,4 @@
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
+import {youtubedl, youtubedlv2} from '@bochilteam/scraper-sosmed';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, args}) => {
   if (!args[0]) throw '*🚩Need a Youtube Link...*';
@@ -12,7 +12,7 @@ const handler = async (m, {conn, args}) => {
     const dl_url = await yt.video[q].download();
     const ttl = await yt.title;
     const size = await yt.video[q].fileSizeH;
-    const cap = `*◉╭━⊱⌈📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀_𝘿𝙇 📥⌋⊱━╮◉*\n🎉*${mssg.title}:* ${ttl}\n🌐*${mssg.size}:* ${size}`.trim();
+    const cap = `*◉╭━⊱⌈𝙔𝙊𝙐𝙏𝙐𝘽𝙀_𝘿𝙇⌋⊱━╮◉*\n🎉${mssg.title}: ${ttl}\n🌐${mssg.size}: ${size}`.trim();
     await await conn.sendMessage(m.chat, {document: {url: dl_url}, caption: cap, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: m});
   } catch {
     m.react(done)
@@ -22,7 +22,7 @@ const handler = async (m, {conn, args}) => {
       const n = lolh.result.title || 'error';
       const n2 = lolh.result.link;
       const n3 = lolh.result.size;
-      const cap2 = `*◉╭━⊱⌈📥 𝙔𝙊𝙐𝙏𝙐𝘽𝙀_𝘿𝙇 📥⌋⊱━╮◉*\n🎉*${mssg.title}:* ${n}\n🌐*${mssg.size}:* ${n3}`.trim();
+      const cap2 = `*◉╭━⊱⌈𝙔𝙊𝙐𝙏𝙐𝘽𝙀_𝘿𝙇⌋⊱━╮◉*\n🎉${mssg.title}: ${n}\n🌐${mssg.size}: ${n3}`.trim();
       await conn.sendMessage(m.chat, {document: {url: n2}, caption: cap2, mimetype: 'video/mp4', fileName: n + `.mp4`}, {quoted: m});
     } catch {
       m.react(done)
