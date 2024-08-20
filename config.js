@@ -149,6 +149,7 @@ global.error = '❌'
 global.xmoji = '🌀' 
 global.multiplier = 69 
 global.maxwarn = '2' 
+global.eror = '```404 error```'
 //💌------------------------------------------💌
 
 
