@@ -1,8 +1,8 @@
 {
-  "name": "P-MD-BOT",
-  "description": "P-MD A SUPER WHATSAPP USER BOT",
+  "name": "PRINXE-MD",
+  "description": "PRINXE-MD A SUPER WHATSAPP USER BOT",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
-  "repository": "https://github.com/PRINCE-GDS/PRINCE-MD-BOT",
+  "repository": "https://github.com/PRINCE-GDS/PRINXE-MD",
   
   "stack": "container",
   "env": {
@@ -39,7 +39,7 @@
     "BOT_NAME": {
       "description": "Put your BOT a name",
       "required": true,
-      "value": "ᴛʜᴇ-ᴘʀɪɴᴄᴇ-ᴍᴅ-ʙᴏᴛ"
+      "value": "🔮𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🔮"
       },
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
