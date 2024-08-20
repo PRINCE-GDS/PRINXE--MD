@@ -1,0 +1,87 @@
+{
+  "name": "P-MD-BOT",
+  "description": "P-MD A SUPER WHATSAPP USER BOT",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+  "repository": "https://github.com/PRINCE-GDS/PRINCE-MD-BOT",
+  
+  "stack": "container",
+  "env": {
+      "OWNERS": {
+      "description": "Put your Number as Owner",
+      "required": true,
+      "value": "923092668108;Prince"
+      },
+     "MODE": {
+      "description": "mode public or private",
+      "required": true,
+      "value": "public"
+       },
+     "HKEY": {
+      "description": "Put your Heroku API key Here",
+      "required": true,
+      "value": ""
+    },
+     "HAPP": {
+      "description": "Put the Heroku app name, same as above entered",
+      "required": true,
+      "value": ""
+       },
+    "PREFIX": {
+      "description": "Put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
+      "required": false,
+      "value": ""
+     },
+    "antidelete": {
+      "description": "BOT will forward deleted messages if you make it true",
+      "required": false,
+      "value": "true"
+       },
+    "BOT_NAME": {
+      "description": "Put your BOT a name",
+      "required": true,
+      "value": "ᴛʜᴇ-ᴘʀɪɴᴄᴇ-ᴍᴅ-ʙᴏᴛ"
+      },
+    "DATABASE_URL": {
+      "description": "Put your MongoDB here",
+      "required": false,
+      "value": ""
+      },
+    "DL_MSG": {
+      "description": "Video downloader caption",
+      "required": true,
+      "value": "💌--------------------ᴘʀɪɴᴄᴇ-ᴍᴅ----------------------💌"
+       },
+    "STATUSVIEW": {
+      "description": "Make it true if you want bot to view status",
+      "required": false,
+      "value": "false"
+    },
+    "AutoReaction": {
+      "description": "Make it true if you want bot to react on chats",
+      "required": false,
+      "value": "false"
+    },
+    "SESSION_ID": {
+      "description": "put your session ID here in the box below",
+      "required": true,
+      "value": ""
+    }
+    
+   
+  },
+    
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
