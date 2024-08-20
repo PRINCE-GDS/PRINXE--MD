@@ -7,14 +7,14 @@
 
 
 <p align="center">
-<a href="https://github.com/PRINCE-GDS/PRINCE-MD-BOT"><img title="Author" src="https://img.shields.io/badge/𝑷𝑹𝑰𝑵𝑪𝑬 𝑴𝑫 𝑩𝑶𝑻-black?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD"><img title="Author" src="https://img.shields.io/badge/𝑷𝑹𝑰𝑵𝑪𝑬 𝑴𝑫 𝑩𝑶𝑻-black?style=for-the-badge&logo=github"></a>
 <p/>
 
 <p align="center">
 <a href="https://github.com/PRINCE-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/PRINCE-GDS?label=Followers&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINCE-MD-BOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/PRINCE-MD-BOT?&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINCE-MD-BOT/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/PRINCE-MD-BOT?style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINCE-MD-BOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/PRINCE-GDS/PRINCE-MD-BOT?label=Watching&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/PRINCE-MD-BOT?&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/PRINXE-MD?style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/PRINCE-GDS/PRINXE-MD?label=Watching&style=social"></a>
 </p>
 
 
@@ -59,7 +59,7 @@
 
 🟣 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/PRINCR-MD-BOT) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/PRINXE-MD) 
 
   
 ****
@@ -74,7 +74,7 @@
 
  🟤 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
     <br>
-<p align="left"><a href="https://repl.it/github/PRINCE-GDS/PRINCE-MD-BOT"> <img src="https://img.shields.io/badge/Deploy%20To%20Replit-gray?style=for-the-badge&logo=replit" height="30"/></a></p>
+<p align="left"><a href="https://repl.it/github/PRINCE-GDS/PRINXE-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Replit-gray?style=for-the-badge&logo=replit" height="30"/></a></p>
 
 ****
 
@@ -87,13 +87,13 @@
    
 ⚫ 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
    <br>
-  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FPRINCE-MD-BOT&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/></a></p>
+  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FPRINXE-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/></a></p>
 
 ****
 
 ------------------
 ### ☁️ 𝘿𝙀𝙋𝙇𝙊𝙔 𝙏𝙊 𝙍𝙀𝙉𝘿𝙀𝙍
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FPRINCE-GDS%2FGDS-MD) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FPRINCE-GDS%2FPRINXE-MD) 
 
 ***
 
@@ -123,16 +123,6 @@
 
 
 
-
-### 💌-----------------------👇🏻𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘👇🏻-------------------------💌
-
-
-<p align="left">
-<a href="https://gd-sdeploy.vercel.app/PRINCE-MD-WEB-main/projects/index.html"><img height= "70" title="Author" src="https://img.shields.io/badge/𝗣𝗥𝗜𝗡𝗖𝗘 𝗕𝗢𝗧 𝗔𝗟𝗟 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧𝗦-032B44?style=for-the-badge&logo=vercel"></a>
-<p/>
-
-
-****
 
 
 
