@@ -1,77 +1,139 @@
-import fs from 'fs';
-import path from 'path';
-import ytdl from 'youtubedl-core';
-import { Client } from 'undici';
-import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
+import yts from 'yt-search';
+import axios from 'axios';
+import ytmp44 from '../lib/ytmp44.js'; 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+let limit = 200;
+let enviando = false;
 
-let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
-  let chat = global.db.data.chats[m.chat];
-  if (!args || !args[0]) throw `🚩 ${mssg.example}:\n${usedPrefix + command} past your Youtube link`;
-  if (!args[0].match(/youtu/gi)) throw `❎ Verify that the YouTube link`;
-  await m.react('⏳')
+const handler = async (m, { conn, args, usedPrefix, command }) => {
+  
+  
+  if (!args[0]) throw '🚩Provide a Youtube Link...';
 
-  const videoDetails = await ytddl(args[0]);
-  if (!videoDetails) throw `❎ Error downloading video`;
+  if (enviando) return;
+  enviando = true;
 
-  const { url, title, author, description } = videoDetails;
+  let youtubeLink = '';
+  if (args[0].includes('you')) {
+    youtubeLink = args[0];
+  } else {
+    const index = parseInt(args[0]) - 1;
+    if (index >= 0) {
+      if (Array.isArray(global.videoList) && global.videoList.length > 0) {
+        const matchingItem = global.videoList.find((item) => item.from === m.sender);
+        if (matchingItem) {
+          if (index < matchingItem.urls.length) {
+            youtubeLink = matchingItem.urls[index];
+          } else {
+            enviando = false  
+            throw `*❗ A link was not found for that number, please enter a number between 1 and 1. ${matchingItem.urls.length}*`;
+          }
+        } else {
+          enviando = false  
+          throw `*❗ To be able to make use of the command in this way (${usedPrefix + command} <numero>), please search for videos with the ${usedPrefix}playlist <texto>*`;
+        }
+      } else {
+        enviando = false  
+        throw `*❗ To be able to make use of the command in this way (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}playlist <texto>*`;
+      }
+    }
+  }
+  
+  const { key } = await conn.sendMessage(m.chat, { text: wait}, { quoted: m });
 
-  const response = await fetch(url);
-  const data = await response.buffer();
+  try {
+    const yt_play = await yts(youtubeLink);
+    const { status, resultados, error } = await ytmp44(yt_play.all[0].url);  
+    if (!status) {
+      enviando = false;
+      throw new Error(error);
+    }
+    const buff_vid = await getBuffer(resultados.descargar);
+    const fileSizeInBytes = buff_vid.byteLength;
+    const fileSizeInKB = fileSizeInBytes / 1024;
+    const fileSizeInMB = fileSizeInKB / 1024;
+    const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
+    const title = resultados.titulo;
 
-  const caption = `╭━━━━⊱𝗬𝗢𝗨𝗧𝗨𝗕𝗘⊱━━━━𓅓
-🚀 Author: ${author || 'Unknown'}	  
-🎉 ${mssg.title}: ${title || 'Unknown'}
-📃 ${mssg.desc}: ${description || 'No description available'}
-🖇️ ${mssg.link}: ${args[0]}
-╰━━━━━𝗣-𝗠𝗗━━━━━━𓅓`;
+    if (fileSizeInMB > limit) {
+      enviando = false;
+      await conn.sendMessage(m.chat, { document: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size} ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+      await conn.sendMessage(m.chat, { text: `${roundedFileSizeInMB} ❣️${mssg.title}: ${title}`, edit: key }, { quoted: m });
+    } else {
+      enviando = false;
+      await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+      await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+    }
+  } catch (error) {
+    try {
+      const yt_play = await yts(youtubeLink);
+      const videoUrl = `https://api.cafirexos.com/api/v1/ytmp4?url=${yt_play.all[0].url}&apikey=BrunoSobrino`;
+      const buff_vid = await getBuffer(videoUrl);
+      const fileSizeInBytes = buff_vid.byteLength;
+      const fileSizeInKB = fileSizeInBytes / 1024;
+      const fileSizeInMB = fileSizeInKB / 1024;
+      const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
+      const title = yt_play.all[0].title;
 
-  conn.sendFile(m.chat, data, `${title || 'video'}.mp4`, caption, m, false, { asDocument: chat.useDocument });
-  await m.react('✅')
+      if (fileSizeInMB > limit) {
+        enviando = false;
+        await conn.sendMessage(m.chat, { document: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `${mssg.size} ${roundedFileSizeInMB} ❣️${mssg.title}: ${title}`, edit: key }, { quoted: m });
+      } else {
+        enviando = false;
+        await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+      }
+    } catch (error) {
+      try {
+        const yt_play = await yts(youtubeLink);
+        const videoUrl = `https://api.cafirexos.com/api/v2/ytmp4?url=${yt_play.all[0].url}&apikey=BrunoSobrino`;
+        const buff_vid = await getBuffer(videoUrl);
+        const fileSizeInBytes = buff_vid.byteLength;
+        const fileSizeInKB = fileSizeInBytes / 1024;
+        const fileSizeInMB = fileSizeInKB / 1024;
+        const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
+        const title = yt_play.all[0].title;
+
+        if (fileSizeInMB > limit) {
+          enviando = false;
+          await conn.sendMessage(m.chat, { document: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+          await conn.sendMessage(m.chat, { text: `❣️${mssg.size}: ${roundedFileSizeInMB} ❣️${mssg.title}: ${title}`, edit: key }, { quoted: m });
+        } else {
+          enviando = false;
+          await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+          await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+        }
+      } catch (error) {
+        enviando = false;
+        await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+        throw `⭕Couldnt download your video`;
+      }
+    }
+  } finally {
+    enviando = false;
+  }
 };
 
-
-handler.help = ['ytmp4 <yt-link>'];
-handler.tags = ['downloader'];
-handler.command = ['ytmp4', 'ytv'];
-handler.diamond = false;
-
+handler.command = /^(video|fgmp4|dlmp4|getvid|yt(v|mp4)?)$/i;
 export default handler;
 
-async function getCookies() {
-  const cookiesPath = path.resolve(__dirname, '../Assets/cookies.json');
-  if (!fs.existsSync(cookiesPath)) {
-    throw new Error('Cookies file not found');
-  }
-  return JSON.parse(fs.readFileSync(cookiesPath, 'utf-8'));
-}
-
-async function createClient() {
-  const cookies = await getCookies();
-  return new Client("https://www.youtube.com", {
-    headers: {
-      "Cookie": cookies.map(cookie => `${cookie.name}=${cookie.value}`).join('; ')
-    }
-  });
-}
-
-async function ytddl(url) {
+const getBuffer = async (url, options) => {
   try {
-    const client = await createClient();
-    const yt = await ytdl.getInfo(url, { requestOptions: { client: client } });
-    const link = ytdl.chooseFormat(yt.formats, { quality: 'highest', filter: 'audioandvideo' });
-
-    return {
-      url: link.url,
-      title: yt.videoDetails.title,
-      author: yt.videoDetails.author.name,
-      description: yt.videoDetails.description,
-    };
-  } catch (error) {
-    console.error("An error occurred:", error);
-    return null;  // Ensure a null is returned on error
+    options ? options : {};
+    const res = await axios({
+      method: 'get',
+      url,
+      headers: {
+        'DNT': 1,
+        'Upgrade-Insecure-Request': 1,
+      },
+      ...options,
+      responseType: 'arraybuffer',
+    });
+    return res.data;
+  } catch (e) {
+    console.log(`Error : ${e}`);
   }
-}
+};
