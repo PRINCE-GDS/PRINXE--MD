@@ -1,7 +1,7 @@
 const delay = time => new Promise(res => setTimeout(res, time));
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }) {
-    let bot = global.db.data.settings[this.user.jid] || {};
+  let bot = global.db.data.settings[this.user.jid] || {};
   // Check if the message is from the "Baileys" library or if the chat has antiCall set to false.
   if (m.isBaileys) return;
   if (!bot.antiCall) return;
@@ -46,5 +46,17 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }
     console.log({ messageStubType: m.messageStubType, messageStubParameters: m.messageStubParameters, type: m.messageStubType });
   }
 }
+
+conn.ev.on("call", async (json) => {
+  for (let id of json) {
+    if (id.status === "offer") {
+      let msg = await conn.sendMessage(id.from, { text: "*You can unban yourself by contacting Owner.*
+*There is below Owner Number.✅*" })
+
+      conn.sendContact(id.from, global.owner, msg)
+      await conn.rejectCall(id.id, id.from)
+    }
+  }
+});
 
 export const disabled = false;
