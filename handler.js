@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
                 if (!("self" in settings)) settings.self = false
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
-		//if (!('anticall' in settings)) settings.antiCall = false
+	        if (!('anticall' in settings)) settings.antiCall = true
                 if (!("restartDB" in settings)) settings.restartDB = 0
                 if (!("status" in settings)) settings.status = 0
 		if (!('solopv' in settings)) settings.solopv = false // el bot responde solo por dm
@@ -185,7 +185,7 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: false,
                 restrict: false,
-		//antiCall: false,
+	        antiCall: true,
                 restartDB: 0,
 		solopv: false, 
                 sologp: false,
@@ -730,6 +730,22 @@ export async function groupsUpdate(groupsUpdate) {
         await this.sendMessage(id, { text, mentions: this.parseMention(text) })
     }
 }
+
+
+/*anticall*/
+
+export async function callUpdate(callUpdate) {
+let isAnticall = global.db.data.settings[this.user.jid].antiCall  
+if (!isAnticall) return
+for (let nk of callUpdate) { 
+if (nk.isGroup == false) {
+if (nk.status == "offer") {
+let callmsg = await this.reply(nk.from, `*HELLO* *@${nk.from.split('@')[0]}*, ${nk.isVideo ? '*THE VIDEO CALLS* 📲', : '*THE CALLS* 📞' } *THEY ARE NOT AUTHORIZED SO I AM GOING TO BLOCK YOU*\n\n*IF YOU CALLED BY ACCIDENT CONTACT THE PERSON CREATOR OF THIS BOT*`, false, { mentions: [nk.from] })
+//let data = global.owner.filter(([id, isCreator]) => id && isCreator)
+//await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
+await this.updateBlockStatus(nk.from, 'block')
+}}}}
+
 
 /**
 Delete Chat
