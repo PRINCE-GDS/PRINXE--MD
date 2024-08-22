@@ -46,27 +46,26 @@ let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Assets/Prince.
 let user = global.db.data.users[who]
   
 let infobt = `
-≡ *INFO BOT*
+≡ *𝙄𝙉𝙁𝙊-𝘽𝙊𝙏*
   
-*STATE*
-▢ *${groupsIn.length}* GROUP CHATS
-▢ *${groupsIn.length}* united groups
-▢ *${groupsIn.length - groupsIn.length}* abandoned groups
-▢ *${chats.length - groupsIn.length}* private chats
-▢ *${chats.length}* Total Chats
+*𝙎𝙏𝘼𝙏𝙀*
+▢ *${groupsIn.length}* 𝙂𝙍𝙊𝙐𝙋 𝘾𝙃𝘼𝙏𝙎
+▢ *${groupsIn.length}* 𝙐𝙉𝙄𝙏𝙀𝘿 𝙂𝙍𝙊𝙐𝙋 
+▢ *${groupsIn.length - groupsIn.length}* 𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝙀𝘿 𝙂𝙍𝙊𝙐𝙋
+▢ *${chats.length - groupsIn.length}* 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘾𝙃𝘼𝙏𝙎
+▢ *${chats.length}* 𝙏𝙊𝙏𝘼𝙇 𝘾𝙃𝘼𝙏𝙎 
 
-*≡ OWNER🧑‍💻*
- _PRINCE GDS_
-▢ https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11
+*≡ 𝙊𝙒𝙉𝙒𝙍🧑‍💻*
+ _𝙈𝘼𝙉𝙉𝙊-𝙂𝘿𝙎_
+*▢  https://github.com/MANNO-GDS/THE-MANNO-MD*
   
-▢ MY BOT GC LINK.
-  https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP
+▢ 𝙈𝙔 𝘽𝙊𝙏 𝙂𝘾 𝙇𝙄𝙉𝙆 .
+*▢  https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM*
+ *≡ 𝙎𝙀𝙍𝙑𝙀𝙍*
+*🛑 𝙍𝘼𝙈:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🔵 𝙁𝙍𝙀𝙀-𝙍𝘼𝙈:* ${format(freemem())}
 
- *≡ S E R V E R*
-*🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
-*🔵 FreeRAM:* ${format(freemem())}
-
-*≡  NodeJS memory *
+*≡  𝙉𝙊𝘿𝙅𝙎 𝙈𝙀𝙈𝙊𝙍𝙔 *
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
 conn.sendFile(m.chat, pp, 'prefil.jpg', infobt, m, false, { mentions: [who] })
