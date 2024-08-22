@@ -27,8 +27,8 @@ for (let i = 0; i < ownerlist.length; i += 2) {
 
 
 //💌global.pairingNumber = "" //put your bot number here💌
-global.mods = ['923042205427'] 
-global.prems = ['']
+global.mods = ['917705895455'] 
+global.prems = ['917705895455']
 global.allowed = ['']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
@@ -91,16 +91,16 @@ global.APIKeys = {
 
 // Bot Images 
 global.imagen1 = fs.readFileSync("./Assets/menus/Menu.png")
-global.imagen2 = fs.readFileSync("./Assets/menus/Menu1.jpg")
-global.imagen3 = fs.readFileSync("./Assets/menus/Menu2.jpg")
-global.imagen4 = fs.readFileSync("./Assets/menus/Menu3.jpg")
-global.imagen5 = fs.readFileSync("./Assets/menus/img2.jpg")
-global.imagen6 = fs.readFileSync("./Assets/menus/img5.jpg")
-global.imagen7 = fs.readFileSync("./Assets/menus/img6.jpg")
-global.imagen8 = fs.readFileSync("./Assets/menus/img8.jpg")
-global.imagen9 = fs.readFileSync("./Assets/menus/img9.jpg")
-global.imagen10 = fs.readFileSync("./Assets/menus/img11.jpg")
-global.imagen11 = fs.readFileSync("./Assets/menus/img12.jpg")
+global.imagen2 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen3 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen4 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen5 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen6 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen7 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen8 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen9 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen10 = fs.readFileSync("./Assets/menus/Menu.png")
+global.imagen11 = fs.readFileSync("./Assets/menus/Menu.png")
 //💌------------------------------------------💌
 
 
@@ -118,20 +118,20 @@ global.princeImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen
 
 
 // Moderator 
-global.developer = 'https://wa.me/message/DCAK67ON3XVOG1' //contact
+global.developer = 'https://wa.me/message/917705895455' //contact
 //💌------------------------------------------💌
 
 
 
 //Sticker WM
 global.botname = process.env.BOT_NAME
-global.princebot = '🛡️𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋🛡️'
-global.packname = 'Prince♥️' 
-global.author = 'Prince♥️' 
+global.princebot = '「 💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」'
+global.packname = ' 「𝙈𝘼𝙉𝙉𝙊」 ♥️' 
+global.author = '💭' 
 global.princeig = 'https://www.instagram.com' 
-global.princegp = 'https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11'
+global.princegp = 'https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM'
 global.menuvid = 'https://i.imgur.com/GFAAXqw.mp4'
-global.Princesc = 'https://github.com/PRINCE-GDS/THE-PRINCE-BOT' 
+global.Princesc = 'https://github.com/MANNO-GDS/THE-MANNO-MD' 
 global.princeyt = 'https://youtube.com/'
 global.Princelog = 'https://i.imgur.com/cUvIv5w.jpeg'
 global.thumb = fs.readFileSync('./Assets/Prince.png')
@@ -141,7 +141,7 @@ global.thumb = fs.readFileSync('./Assets/Prince.png')
 
 //Reactions
 global.wait = '*📥 `𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂 𝙔𝙊𝙐𝙍 𝙁𝙄𝙇𝙀 𝙒𝘼𝙄𝙏...`*\n*▰▰▰▱▱▱▱▱*'
-global.imgs = '*🖼️ _𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 ɪᴍᴀɢᴇs 𝚆𝙰𝙸𝚃..._*\n*▰▰▰▱▱▱▱▱*'
+global.imgs = '*🖼️ _𝙂𝙀𝙏𝙏𝙄𝙉𝙂 𝙔𝙊𝙐𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙒𝘼𝙄𝙏..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '♻️'
 global.dmoji = '🤭'
 global.done = '✅'
