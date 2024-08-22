@@ -514,7 +514,7 @@ if (settingsREAD.autoread2) await this.readMessages([m.key])
 
 if (typeof process.env.AutoReaction === 'undefined' || process.env.AutoReaction.toLowerCase() === 'false') return; 
 if (m.text.match(/(prince|a|e|o|u|i|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi)) {
-let emot = pickRandom(["🥰", "✨", "💗", "♥️", "👑", "💞", "💖", "💓", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "🕊️", "🥀", "🦋", "❤‍🩹", "♥️", "❣️", "✨","👑","🌙", "💫", "🪐","🧸", "🎀","🖇️", "📎","🖤", "🤍", "🤎", "💛", "💚","💙", "💜", "💟", "💓"])
+let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫", "😚", "🤭", "☺️", "✨", "🎉", "💗", "♥️", "👑", "😚", "💞", "💖", "💓", "⚡️", "🌝", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "😎", "😍", "🕊️", "🥀", "🦋", "🐣", "❤‍🩹", "♥️", "😒", "🌸", "🌈", "❣️", "✨", "🙌", "👻", "👑", "🐤", "🪽", "🌙", "💫", "🪐", "☀️", "🌪️", "🧸", "🎀", "🎉", "🪞", "🖇️", "📎", "🩷", "🖤", "🤍", "🤎", "💛", "💚", "🩵", "💙", "💜", "💟", "💓", "🩶", "😑", "😶"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}
@@ -735,16 +735,30 @@ export async function groupsUpdate(groupsUpdate) {
 /*anticall*/
 
 export async function callUpdate(callUpdate) {
-let isAnticall = global.db.data.settings[this.user.jid].antiCall  
-if (!isAnticall) return
-for (let nk of callUpdate) { 
-if (nk.isGroup == false) {
-if (nk.status == "offer") {
-let callmsg = await this.reply(nk.from, `*HELLO* *@${nk.from.split('@')[0]}*, ${nk.isVideo ? '*THE VIDEO CALLS* 📲', : '*THE CALLS* 📞' } *THEY ARE NOT AUTHORIZED SO I AM GOING TO BLOCK YOU*\n\n*IF YOU CALLED BY ACCIDENT CONTACT THE PERSON CREATOR OF THIS BOT*`, false, { mentions: [nk.from] })
-//let data = global.owner.filter(([id, isCreator]) => id && isCreator)
-//await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-await this.updateBlockStatus(nk.from, 'block')
-}}}}
+    let isAnticall = global.db.data.settings[this.user.jid].antiCall;  
+    if (!isAnticall) return;
+    global.db.data.callWarnings = global.db.data.callWarnings || {};
+    for (let nk of callUpdate) { 
+        if (!nk.isGroup) {
+            if (nk.status === "offer") {
+                await conn.rejectCall(nk.id, nk.from);
+                let warnings = global.db.data.callWarnings[nk.from] || 0;
+                warnings += 1;
+                if (warnings < 3) {
+                    global.db.data.callWarnings[nk.from] = warnings;
+                    let warningMessage = `⚠️Warning *${warnings}/2:* *You attempted to call* *@${nk.from.split('@')[0]}*. ${nk.isVideo ? '*Video calls are not allowed.*' : '*Voice calls are not allowed.*'} *You will be blocked if you call again.*`;
+                    await this.reply(nk.from, warningMessage, false, { mentions: [nk.from] });
+                } else {
+                    let blockMessage = process.env.ANTICALL_MSG || '*You have been blocked for attempting to call too many times.*';
+                    await this.reply(nk.from, blockMessage, false, { mentions: [nk.from] });
+                    await this.updateBlockStatus(nk.from, 'block');
+                    await this.sendContact(nk.from, global.owner, blockMessage);
+                    delete global.db.data.callWarnings[nk.from];
+                }
+            }
+        }
+    }
+}
 
 
 /**
