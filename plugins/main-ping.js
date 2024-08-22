@@ -8,9 +8,9 @@ let handler = async (m, { conn }) => {
           let ssd = child.replace(/Memory:/, "Ram:");
           m.reply(`*⸙• 「「⸙」‎🌸🖥️*                 
              
-        *${mssg.ping}* : ${latensi.toFixed(4)} 𝙈𝙎
+ *${mssg.ping}* : ${latensi.toFixed(4)} 𝙈𝙎
                  🔐⚠️  
-    *💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌*`);
+ *💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌*`);
             });
 }
 handler.help = ['ping']
