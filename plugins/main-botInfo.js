@@ -56,11 +56,11 @@ let infobt = `
 ▢ *${chats.length}* 𝙏𝙊𝙏𝘼𝙇 𝘾𝙃𝘼𝙏𝙎 
 
 *≡ 𝙊𝙒𝙉𝙒𝙍🧑‍💻*
- _𝙈𝘼𝙉𝙉𝙊-𝙂𝘿𝙎_
-*▢  https://github.com/MANNO-GDS/THE-MANNO-MD*
+ 𝙈𝘼𝙉𝙉𝙊-𝙂𝘿𝙎
+▢  *https://github.com/MANNO-GDS/THE-MANNO-MD*
   
 ▢ 𝙈𝙔 𝘽𝙊𝙏 𝙂𝘾 𝙇𝙄𝙉𝙆 .
-*▢  https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM*
+▢  *https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM*
  *≡ 𝙎𝙀𝙍𝙑𝙀𝙍*
 *🛑 𝙍𝘼𝙈:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 𝙁𝙍𝙀𝙀-𝙍𝘼𝙈:* ${format(freemem())}
