@@ -1,9 +1,6 @@
   
 ![PRINXE-MD](https://readme-typing-svg.demolab.com?font=Garamond&size=20&pause=998&color=skyblue&background=white&right=true&random=true&width=465&lines=HELLO+EVERYONE👋🏻;WELCOME+TO+THE+MANNO+MD+💙)
   
-<a><img src='https://telegra.ph/file/d52a552a0b817753754e8.jpg'/></a>
-<a><img src='https://telegra.ph/file/d52a552a0b817753754e8.jpg'/></a>
-
  
  <p align="center">  
   <a href="">
