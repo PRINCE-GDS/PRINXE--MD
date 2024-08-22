@@ -49,22 +49,22 @@
 <p/>
 
 
-### <br>
+### 𝙃𝙀𝙍𝙊𝙆𝙐 𝘿𝙀𝙋𝙇𝙊𝙔
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MANNO-GDS/THE-MANNO-MD) 
  
  
 
-### <br>
+### 𝙍𝙀𝙋𝙇𝙄𝙏 𝘿𝙀𝙋𝙇𝙊𝙔
 <p align="left"><a href="https://repl.it/github/MANNO-GDS/THE-MANNO-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Replit-gray?style=for-the-badge&logo=replit" height="25"/></a></p>
 
 
 
- ### <br>
+ ### 𝙆𝙊𝙔𝙀𝘽 𝘿𝙀𝙋𝙇𝙊𝙔 
   <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FMANNO-GDS%2FTHE-MANNO-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/></a></p>
 
 
  
-### <br>
+### 𝙍𝙀𝙉𝘿𝙀𝙍 𝘿𝙀𝙋𝙇𝙊𝙔 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FMANNO-GDS%2FTHE-MANNO-MD) 
 
 
