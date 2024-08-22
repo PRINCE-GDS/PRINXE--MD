@@ -19,8 +19,8 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
 
         let sections = [
             {
-                title: '𝗣𝗥𝗜𝗡𝗖𝗘-𝗠𝗗',
-                highlight_label: '⚡𝑷-𝑴𝑫⚡',
+                title: '𝙈𝘼𝙉𝙉𝙊-𝙈𝘿',
+                highlight_label: '💌 𝙈-𝙈𝘿💌',
                 rows: [{
                     header: '👇🏻𝗙𝗢𝗥 𝗕𝗢𝗧 𝗠𝗘𝗡𝗨 𝗦𝗘𝗟𝗘𝗖𝗧 𝗧𝗛𝗜𝗦',
                     title: "𝗠𝗘𝗡𝗨",
@@ -44,7 +44,7 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
         }
 
         let listMessage = {
-            title: '🚀𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
+            title: '💭 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
             sections
         };
 
@@ -60,10 +60,10 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
                             text: "𝗖𝗟𝗜𝗖𝗞 𝗢𝗡 𝗧𝗛𝗘 𝗕𝗨𝗧𝗧𝗢𝗡 𝗕𝗘𝗟𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗬𝗢𝗨𝗥 𝗔𝗣𝗞 "
                         }),
                         footer: proto.Message.InteractiveMessage.Footer.create({
-                            text: '⚡𝑷-𝑴𝑫⚡'
+                            text: '💌 𝙈-𝙈𝘿💌'
                         }),
                         header: proto.Message.InteractiveMessage.Header.create({
-                            subtitle: '⚡𝑷-𝑴𝑫⚡',
+                            subtitle: '💌 𝙈-𝙈𝘿💌',
                             hasMediaAttachment: false
                         }),
                         nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -102,10 +102,10 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
                             text: teks
                         }),
                         footer: proto.Message.InteractiveMessage.Footer.create({
-                            text: '⚡𝑷-𝑴𝑫⚡'
+                            text: '💌 𝙈-𝙈𝘿💌'
                         }),
                         header: proto.Message.InteractiveMessage.Header.create({
-                            subtitle: '⚡𝑷-𝑴𝑫⚡',
+                            subtitle: '💌 𝙈-𝙈𝘿💌',
                             hasMediaAttachment: true, ...(await prepareWAMessageMedia({ image: { url: data.icon } }, { upload: conn.waUploadToServer }))
                         }),
                         nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
@@ -128,7 +128,7 @@ let handler = async (m, { conn, command, usedPrefix, text }) => {
         if (!text) return;
         let data = await download(text);
         let buffer = await getBuffer(data.dllink);
-        conn.sendMessage(m.chat, { document: buffer, mimetype: 'application/vnd.android.package-archive', fileName: data.name, caption: `𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗕𝗬 @${m.sender.split("@")[0]}`, contextInfo: { mentionedJid: [m.sender] } }, { quoted: m });
+        conn.sendMessage(m.chat, { document: buffer, mimetype: 'application/vnd.android.package-archive', fileName: data.name, caption: `𝙍𝙀𝙌𝙐𝙀𝙎𝙏𝙀𝘿 𝘽𝙔 @${m.sender.split("@")[0]}`, contextInfo: { mentionedJid: [m.sender] } }, { quoted: m });
     } else return;
 }
 
