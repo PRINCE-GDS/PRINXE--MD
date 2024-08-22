@@ -1,6 +1,8 @@
+import displayLoadingScreen from '../lib/loading.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-	
+let pp = 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg'
+await displayLoadingScreen(conn, m.chat)
 	let _muptime
     if (process.send) {
       process.send('uptime')
@@ -10,7 +12,27 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }) * 1000
     }
     let muptime = clockString(_muptime)
-   m.reply(`🏮 *Bot active duration*  \n\n${muptime}`) 
+    let str = `*あMANNO RUNTIMEあ\n\n${muptime}*`
+    conn.sendMessage(m.chat, {
+      text: str,
+      contextInfo: {
+      
+      mentionedJid: [m.sender],
+      isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363178281296360@newsletter',
+                newsletterName: global.author,
+                serverMessageId: -1
+            },
+      forwardingScore: 999,
+      externalAdReply: {
+      title: "💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌",
+      body: "R U N T I M E",
+      thumbnailUrl: pp,
+      sourceUrl: 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg',
+      mediaType: 1,
+      renderLargerThumbnail: true
+      }}})
 }
 handler.help = ['runtime']
 handler.tags = ['main']
