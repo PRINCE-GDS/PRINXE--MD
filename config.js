@@ -130,10 +130,10 @@ global.packname = ' 「𝙈𝘼𝙉𝙉𝙊」 ♥️'
 global.author = '💭' 
 global.princeig = 'https://www.instagram.com' 
 global.princegp = 'https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM'
-global.menuvid = 'https://i.imgur.com/GFAAXqw.mp4'
+global.menuvid = 'https://i.imgur.com/8E2itvZ.mp4'
 global.Princesc = 'https://github.com/MANNO-GDS/THE-MANNO-MD' 
 global.princeyt = 'https://youtube.com/'
-global.Princelog = 'https://i.imgur.com/cUvIv5w.jpeg'
+global.Princelog = 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg'
 global.thumb = fs.readFileSync('./Assets/Prince.png')
 //💌------------------------------------------💌
 
