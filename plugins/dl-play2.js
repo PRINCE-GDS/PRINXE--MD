@@ -24,14 +24,14 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'video') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `╭━━⊱🌟 Y O U T U B E 🌟⊱━━╮
+    const texto1 = `╭━━⊱💌𝙔𝙊𝙐-𝙏𝙐𝘽𝙀💌⊱━━╮
     
   🌐 ${mssg.type}: ${yt_play[0].author.name}
   📃 ${mssg.title}: ${yt_play[0].title}
   ⏰ ${mssg.duration}: ${secondString(yt_play[0].duration.seconds)}
   🎴 ${mssg.views}: ${yt_play[0].views}
   🔗 ${mssg.link}: ${yt_play[0].url}
-⊱─━⊱༻ⓅⓇⒾⓃⒸⒺⒷⓄⓉ༺⊰━─⊰`;
+ *•┈┈••✦❀𝙈𝘼𝙉𝙉𝙊-𝘽𝙊𝙏❀✦••┈┈•*`;
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {
