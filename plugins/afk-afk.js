@@ -5,10 +5,10 @@ let handler = async (m, { text, conn }) => {
     user.afk = + new Date
     user.afkReason = text
     m.reply(`
-  😴 *AFK* 
-You are now afk until u send a message 
-▢ *User:* ${conn.getName(m.sender)} 
-▢ *Reason:* ${text ? text : ''}
+  😴 *𝘼𝙁𝙆* 
+𝙔𝙊𝙐 𝘼𝙍𝙀 𝙉𝙊𝙒 𝘼𝙁𝙆 𝙐𝙉𝙏𝙄𝙇 𝙐 𝙎𝙀𝙉𝘿 𝙈𝙀 𝘼 𝙈𝙀𝙎𝙎𝙀𝙂𝙀
+▢ *𝙐𝙎𝙀𝙍:* ${conn.getName(m.sender)} 
+▢ *𝙍𝙀𝘼𝙎𝙊𝙉:* ${text ? text : ''}
   `)
 }
 handler.help = ['afk <reason>']
