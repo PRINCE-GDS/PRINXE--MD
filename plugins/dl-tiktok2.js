@@ -2,7 +2,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 
 let handler = async (m, {text, usedPrefix, conn}) => {
-if (!text) return m.reply('${mssg.example}: .' + usedPrefix + ' past the link here...');
+if (!text) return m.reply('${mssg.example}: .' + usedPrefix + ' 𝙋𝘼𝙎𝙏𝙀 𝙏𝙃𝙀 𝙇𝙄𝙉𝙆 𝙃𝙀𝙍𝙀...');
 try {
 m.reply(wait)
 let { media, status, isSlide, title } = await tiktok(text);
@@ -77,13 +77,13 @@ const prefixx = $$('input[name="prefix"]').attr('value');
                 const linkType = $(this).find('a').text().trim();
                 const url = $(this).find('a').attr('href');
 
-                if (linkType === 'Download watermark') {
+                if (linkType === '𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙒𝘼𝙏𝙀𝙍𝙈𝘼𝙍𝙆') {
                     media['watermark'] = url;
-                } else if (linkType === 'Download Mp3') {
+                } else if (linkType === '𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙈𝙋3') {
                     media['mp3'] = url;
-                } else if (linkType === 'Download without watermark') {
+                } else if (linkType === '𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙒𝙄𝙏𝙃𝙊𝙐𝙏 𝙒𝘼𝙏𝙀𝙍𝙈𝘼𝙍𝙆') {
                     media['no_wm'] = url;
-                } else if (linkType === 'Download without watermark (HD)') {
+                } else if (linkType === '𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙒𝙄𝙏𝙃𝙊𝙐𝙏 𝙒𝘼𝙏𝙀𝙍𝙈𝘼𝙍𝙆 (𝙃𝘿)') {
                     media.hd = url;
                 }
             });
