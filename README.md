@@ -24,6 +24,7 @@
 
  <h1 align="center">│✫ - 「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」 - ✫│</h1>
 
+
 ### 𝘾𝙇𝙄𝘾𝙆 𝘼𝙉𝘿 𝙒𝘼𝙄𝙏 𝙏𝙊 𝙊𝙋𝙀𝙉 𝙏𝙃𝙀 𝙎𝙄𝙏𝙀
 
 
@@ -34,30 +35,38 @@
 <p/>
 
 
+
 ### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
 <p align="left">
 <a href="https://princebotzsession.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-skyblue?style=for-the-badge&logo=render"></a>
 <p/>
   
 
+
 ### 𝙌𝙍 𝙎𝘾𝘼𝙉
 <p align="left">
 <a href="https://princebotqr.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-red?style=for-the-badge&logo=render"></a>
 <p/>
 
+
 ### <br>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MANNO-GDS/THE-MANNO-MD) 
  
  
- ### <br>
+
+### <br>
 <p align="left"><a href="https://repl.it/github/MANNO-GDS/THE-MANNO-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Replit-gray?style=for-the-badge&logo=replit" height="25"/></a></p>
 
 
-   ### <br>
-  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FMANNO-GDS%2FTHE-MANNO-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/></a></p>
 
  ### <br>
+  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FMANNO-GDS%2FTHE-MANNO-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/></a></p>
+
+
+ 
+### <br>
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FMANNO-GDS%2FTHE-MANNO-MD) 
+
 
 
 ### 🟢 𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 🟢
@@ -66,16 +75,18 @@
      <p/>
        
 
+
 ### 𝗟𝗜𝗖𝗘𝗡𝗦𝗘: [Clikc here](https://github.com/MANNO-GDS/THE-MANNO-MD/blob/main/LICENSE)
 
  
-### 💠 [`𝘼𝙑𝘼𝙄𝙇𝘼𝘽𝙇𝙀 𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀𝙎 𝙁𝙊𝙍 𝙋𝙍𝙄𝙉𝘾𝙀 𝘽𝙊𝙏`]
+### 💠 [`𝘼𝙑𝘼𝙄𝙇𝘼𝘽𝙇𝙀 𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀𝙎 𝙁𝙊𝙍 𝙈𝘼𝙉𝙉𝙊 𝘽𝙊𝙏`]
 #### 🌐 Arabic = ar 
 #### 🌐 Urdu = ur
 #### 🌐 English Global = en
 #### 🌐 Bahasa Indonesia = id
 #### 🌐 Portuguese = pt
 #### 🌐 Spanish = es
+
 
 ### 💭[.𝘿𝙀𝙑𝙊𝙇𝙋𝙀𝙍 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 ]
 
