@@ -191,16 +191,20 @@ case 'autobio':
           }
           bot.antiCall = isEnable
           break
+
+
+		  
     case 'onlypv':
     case 'onlydm':
     case 'onlymd':
     case 'solopv':
       isAll = true
-      if (!isROwner) {
-        global.dfail('rowner', m, conn)
+      if (!isOwner) {
+        global.dfail('owner', m, conn)
         throw false
       }
-      global.opts['pconly'] = isEnable
+      //global.opts['solopv'] = isEnable
+      bot.solopv = isEnable
       break
       
     case 'gponly':
@@ -209,11 +213,12 @@ case 'autobio':
     case 'sologp':
     case 'sologrupo':
       isAll = true
-      if (!isROwner) {
-        global.dfail('rowner', m, conn)
+      if (!isOwner) {
+        global.dfail('owner', m, conn)
         throw false
       }
-      global.opts['gconly'] = isEnable
+      //global.opts['sologp'] = isEnable
+      bot.sologp = isEnable
       break
       
     default:
