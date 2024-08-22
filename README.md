@@ -1,5 +1,5 @@
   
-![PRINXE-MD](https://readme-typing-svg.demolab.com?font=Garamond&size=20&pause=998&color=skyblue&background=white&right=true&random=true&width=465&lines=HELLO+EVERYONE👋🏻;WELCOME+TO+THE+MANNO+MD+💙)
+![PRINXE-MD](https://readme-typing-svg.demolab.com?font=Garamond&size=20&pause=998&color=skyred&background=white&right=true&random=true&width=465&lines=𝙃𝙀𝙇𝙇𝙊+𝙀𝙑𝙀𝙍𝙀𝙔𝙊𝙉𝙀👋🏻;𝙒𝙀𝙇𝘾𝙊𝙈𝙀+𝙏𝙒𝙊+𝙏𝙃𝙀+𝙈𝘼𝙉𝙉𝙊+𝙈𝘿+💭🌍)
   
  
  <p align="center">  
