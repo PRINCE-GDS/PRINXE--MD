@@ -1,11 +1,11 @@
 import fetch from 'node-fetch';
 import axios from 'axios';
-import yts from 'youtube-yts';
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
-import ytdl from 'youtubedl-core';
+import yts from 'yt-search';
+import {youtubedl, youtubedlv2} from '@bochilteam/scraper-sosmed';
+import ytdl from 'ytdl-core';
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 import YTDL from "../lib/ytdll.js";
-import fs from "fs-extra";
+import fs from "fs";
 let limit1 = 100;
 let limit2 = 400;
 let limit_a1 = 50;
@@ -31,7 +31,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   ⏰ ${mssg.duration}: ${secondString(yt_play[0].duration.seconds)}
   🎴 ${mssg.views}: ${yt_play[0].views}
   🔗 ${mssg.link}: ${yt_play[0].url}
- *•┈┈••✦❀𝙈𝘼𝙉𝙉𝙊-𝘽𝙊𝙏❀✦••┈┈•*`;
+*•┈•✦❀𝙈𝘼𝙉𝙉𝙊-𝘽𝙊𝙏❀✦•┈•*`;
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {
