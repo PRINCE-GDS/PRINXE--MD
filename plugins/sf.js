@@ -8,7 +8,7 @@ import fs from 'fs'
  } 
  handler.help = ['sf'].map(v => v + ' <text>') 
  handler.tags = ['owner'] 
- handler.command = /^sf$/i 
+ handler.command = /^(sf|sp)$/i 
   
  handler.rowner = true 
  export default handler
