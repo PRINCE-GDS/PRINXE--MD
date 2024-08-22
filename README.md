@@ -16,7 +16,7 @@
 
 <p align="center">
 <a href="https://github.com/MANNO-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/MANNO-GDS?label=Followers&style=social"></a>
-<a href="https://github.com/MANNO-GDS/THE-MANNO-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/MANNO-GDS/THE-MANNO-MD-BOT?&style=social"></a>
+<a href="https://github.com/MANNO-GDS/THE-MANNO-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/MANNO-GDS/THE-MANNO-MD?&style=social"></a>
 <a href="https://github.com/MANNO-GDS/THE-MANNO-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/MANNO-GDS/THE-MANNO-MD?style=social"></a>
 <a href="https://github.com/MANNO-GDS/THE-MANNO-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/MANNO-GDS/THE-MANNO-MD?label=Watching&style=social"></a>
 </p>
