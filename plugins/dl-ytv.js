@@ -9,7 +9,7 @@ let enviando = false;
 const handler = async (m, { conn, args, usedPrefix, command }) => {
   
   
-  if (!args[0]) throw '🚩Provide a Youtube Link...';
+  if (!args[0]) throw '💭 𝙋𝙍𝙊𝙑𝙄𝘿𝙀 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙇𝙄𝙉𝙆...';
 
   if (enviando) return;
   enviando = true;
@@ -58,12 +58,12 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
     if (fileSizeInMB > limit) {
       enviando = false;
-      await conn.sendMessage(m.chat, { document: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size} ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
-      await conn.sendMessage(m.chat, { text: `${roundedFileSizeInMB} ❣️${mssg.title}: ${title}`, edit: key }, { quoted: m });
+      await conn.sendMessage(m.chat, { document: buff_vid, caption: `💌${mssg.title}: ${title}\n💌${mssg.size} ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+      await conn.sendMessage(m.chat, { text: `${roundedFileSizeInMB} 💌${mssg.title}: ${title}`, edit: key }, { quoted: m });
     } else {
       enviando = false;
-      await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
-      await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+      await conn.sendMessage(m.chat, { video: buff_vid, caption: `💌${mssg.title}: ${title}\n💌${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+      await conn.sendMessage(m.chat, { text: `📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`, edit: key }, { quoted: m });
     }
   } catch (error) {
     try {
@@ -78,12 +78,12 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
 
       if (fileSizeInMB > limit) {
         enviando = false;
-        await conn.sendMessage(m.chat, { document: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
-        await conn.sendMessage(m.chat, { text: `${mssg.size} ${roundedFileSizeInMB} ❣️${mssg.title}: ${title}`, edit: key }, { quoted: m });
+        await conn.sendMessage(m.chat, { document: buff_vid, caption: `💌${mssg.title}: ${title}\n💌${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `${mssg.size} ${roundedFileSizeInMB} 💌${mssg.title}: ${title}`, edit: key }, { quoted: m });
       } else {
         enviando = false;
-        await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
-        await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+        await conn.sendMessage(m.chat, { video: buff_vid, caption: `💌${mssg.title}: ${title}\n💌${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`, edit: key }, { quoted: m });
       }
     } catch (error) {
       try {
@@ -103,11 +103,11 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
         } else {
           enviando = false;
           await conn.sendMessage(m.chat, { video: buff_vid, caption: `❣️${mssg.title}: ${title}\n❣️${mssg.size}: ${roundedFileSizeInMB} MB`, fileName: title + '.mp4', mimetype: 'video/mp4' }, { quoted: m });
-          await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+          await conn.sendMessage(m.chat, { text: `📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`, edit: key }, { quoted: m });
         }
       } catch (error) {
         enviando = false;
-        await conn.sendMessage(m.chat, { text: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗✅`, edit: key }, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`, edit: key }, { quoted: m });
         throw `⭕Couldnt download your video`;
       }
     }
