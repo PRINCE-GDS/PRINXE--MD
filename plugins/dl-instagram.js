@@ -6,7 +6,7 @@ import {instagramdl} from '@bochilteam/scraper';
 import instagramDl from '@sasmeee/igdl';
 import {fileTypeFromBuffer} from 'file-type';
 const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `_*[ 🪩 ] Enter an Instagram link.*\n\n*[ 🎴 ] Example:* _${usedPrefix + command} past url here_`;
+  if (!args[0]) throw `_*[ 🪩 ] 𝙀𝙉𝙏𝙀𝙍 𝙏𝙃𝙀 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝙇𝙄𝙉𝙆.*\n\n*[ 🎴 ] Example:* _${usedPrefix + command} 𝙋𝘼𝙎𝙏𝙀 𝙐𝙍𝙇 𝙃𝙀𝙍𝙀_`;
   m.reply(wait);
   m.react(rwait)
   try {
@@ -22,7 +22,7 @@ for (let i = 0; i < img.length; i++) {
 }
   } catch {   
   try {
-    let cap = 'Here is your insta video';
+    let cap = '`📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`';
     const datTa = await instagram.download(args[0]);
     for (const urRRl of datTa) {
       const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
@@ -32,21 +32,21 @@ for (let i = 0; i < img.length; i++) {
     }
   } catch {
       try {
-        let cap = 'Here is your insta video';
+        let cap = '`📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`';
         const resultss = await instagramGetUrl(args[0]).url_list[0];
         const shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
         const txt2 = `_*< Instagram downloader/>*_\n\n▢ *URL:* _${shortUrl2}_`.trim();
         await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, cap, m);
       } catch {
         try {
-          let cap = 'Here is your insta video';
+          let cap = '`📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`';
           const resultssss = await instagramdl(args[0]);
           const shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
           const txt4 = `_*< Instagram downloader/>*_\n\n▢ *URL:* _${shortUrl3}_`.trim();
           for (const {url} of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m);
         } catch {
           try {
-            let cap = 'Here is your insta video';
+            let cap = '`📥 𝙂𝙍𝘼𝙉𝙏𝙀𝘿-𝘽𝙔-𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿`';
             const human = await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=${lolkeysapi}&url=${args[0]}`);
             const json = await human.json();
             const videoig = json.result;
