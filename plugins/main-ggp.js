@@ -1,11 +1,10 @@
-let handler = async m => m.reply(`𝚂𝚄𝙿𝙿𝙾®𝚃 𝙶𝚁𝙾𝚄𝙿 𝙻𝙸𝙽𝙺
- ★☆⚡𝑷-𝑴𝑫⚡☆★
+let handler = async m => m.reply(`𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 
+ 「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」
 
-*${mssg.link}*: https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP
+*${mssg.link}:* 
+*https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM*
 
-*${mssg.link}*: https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11
-
-*OWNER*
+*𝙊𝙒𝙉𝙀𝙍*
 ${developer}
 `.trim())
 handler.help = ['support']
