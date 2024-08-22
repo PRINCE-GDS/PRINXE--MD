@@ -3,7 +3,7 @@ import { join } from 'path';
 import axios from 'axios'; 
 
 let handler = async function (m, { conn, __dirname }) {
-  const githubRepoURL = 'https://github.com/PRINCE-GDS/PRINXE-MD';
+  const githubRepoURL = 'https://github.com/MANNO-GDS/THE-MANNO-MD';
 
   try {
   
@@ -16,15 +16,15 @@ let handler = async function (m, { conn, __dirname }) {
 
       // Format the repository information with emojis
       const formattedInfo = `
-╭⊱✫🔮𝗣𝗥𝗜𝗡𝗖𝗘-𝗕𝗢𝗧🔮✫⊱╮
-│✫ - *📂Repository Name:* ${repoData.name}
-│✫ - *📃Description:* ${repoData.description}
-│✫ - *🛡️Owner:* ${repoData.owner.login}
-│✫ - *⭐Stars:* ${repoData.stargazers_count}
-│✫ - *💌Forks:* ${repoData.forks_count}
-│✫ - *🌐 URL:* ${repoData.html_url}
+╭⊱✫💌𝙈𝘼𝙉𝙉𝙊-𝘽𝙊𝙏✫⊱╮
+│✫ - *📂𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙔-𝙉𝘼𝙈𝙀:* ${repoData.name}
+│✫ - *📃𝘿𝙀𝙎𝘾𝙍𝙀𝙋𝙏𝙄𝙊𝙉:* ${repoData.description}
+│✫ - *👤𝙊𝙒𝙉𝙀𝙍:* ${repoData.owner.login}
+│✫ - *⭐𝙎𝙏𝘼𝙍𝙎:* ${repoData.stargazers_count}
+│✫ - *💌𝙁𝙊𝙍𝙆𝙎:* ${repoData.forks_count}
+│✫ - *🌐 𝙐𝙍𝙇:* ${repoData.html_url}
 ╰━━━━━━━━━━━━━━━━━╯
-https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11`.trim();
+https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM`.trim();
 
       // Send the formatted information as a message
       await conn.relayMessage(m.chat,  {
