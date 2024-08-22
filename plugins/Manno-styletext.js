@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
 
   // If no key and text provided, show all styles of a default text
   if (words.length === 0 || !key || !textToStyle) {
-    let defaultText = 'MANNO BOT'
+    let defaultText = 'GURU BOT'
     let styledTexts = await Promise.all(
       [...Array(34).keys()].map(i => stylizeText(defaultText, i + 1))
     )
