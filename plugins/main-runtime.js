@@ -1,7 +1,7 @@
 import displayLoadingScreen from '../lib/loading.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let pp = 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg'
+let pp = 'https://telegra.ph/file/d52a552a0b817753754e8.jpg'
 await displayLoadingScreen(conn, m.chat)
 	let _muptime
     if (process.send) {
