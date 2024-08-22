@@ -1,7 +1,7 @@
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper-sosmed';
 import fetch from 'node-fetch';
 const handler = async (m, {conn, args}) => {
-  if (!args[0]) throw '*🚩Need a Youtube Link...*';
+  if (!args[0]) throw '💭𝙉𝙀𝙀𝘿 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙇𝙄𝙉𝙆...*';
   await m.reply(wait);
     m.react(rwait);
   try {
@@ -26,7 +26,7 @@ const handler = async (m, {conn, args}) => {
       await conn.sendMessage(m.chat, {document: {url: n2}, caption: cap2, mimetype: 'video/mp4', fileName: n + `.mp4`}, {quoted: m});
     } catch {
       m.react(done)
-      await conn.reply(m.chat, '*Error couldnt download the video*', m);
+      await conn.reply(m.chat, '*𝙀𝙍𝙍𝙊𝙍 𝘾𝙊𝙐𝙇𝘿𝙉𝙏 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙑𝙄𝘿𝙀𝙊*', m);
     }
   }
 };
