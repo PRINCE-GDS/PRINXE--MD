@@ -1,77 +1,111 @@
-import fetch from 'node-fetch';
-import axios from 'axios';
-import instagramGetUrl from 'instagram-url-direct';
-import {instagram} from '@xct007/frieren-scraper';
-import {instagramdl} from '@bochilteam/scraper';
-import instagramDl from '@sasmeee/igdl';
-import {fileTypeFromBuffer} from 'file-type';
-const handler = async (m, {conn, args, command, usedPrefix}) => {
-  if (!args[0]) throw `_*[ 🪩 ] Enter an Instagram link.*\n\n*[ 🎴 ] Example:* _${usedPrefix + command} past url here_`;
-  m.reply(wait);
-  m.react(rwait)
-  try {
-const img = await instagramDl(args[0]);
-for (let i = 0; i < img.length; i++) {
-    const bufferInfo = await getBuffer(img[i].download_link);
-        if (bufferInfo.detectedType.mime.startsWith('image/')) {
-            await conn.sendMessage(m.chat, {image: {url: img[i].download_link}}, {quoted: m});
-        } else if (bufferInfo.detectedType.mime.startsWith('video/')) {
-            await conn.sendMessage(m.chat, {video: {url: img[i].download_link }}, {quoted: m});
-          m.react(done)
-        }
-}
-  } catch {   
-  try {
-    let cap = 'Here is your insta video';
-    const datTa = await instagram.download(args[0]);
-    for (const urRRl of datTa) {
-      const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-      const tXXxt = `_*< Instagram downloader />*_\n\n▢ *URL:* _${shortUrRRl}_`.trim();
-      conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, cap, m);
-      await new Promise((resolve) => setTimeout(resolve, 10000));
-    }
-  } catch {
-      try {
-        let cap = 'Here is your insta video';
-        const resultss = await instagramGetUrl(args[0]).url_list[0];
-        const shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-        const txt2 = `_*< Instagram downloader/>*_\n\n▢ *URL:* _${shortUrl2}_`.trim();
-        await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, cap, m);
-      } catch {
+const _0x5de563 = _0x472b;
+(function (_0x5ea876, _0x2d0408) {
+    const _0x14a8c7 = _0x472b, _0x1567d7 = _0x5ea876();
+    while (!![]) {
         try {
-          let cap = 'Here is your insta video';
-          const resultssss = await instagramdl(args[0]);
-          const shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-          const txt4 = `_*< Instagram downloader/>*_\n\n▢ *URL:* _${shortUrl3}_`.trim();
-          for (const {url} of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m);
-        } catch {
-          try {
-            let cap = 'Here is your insta video';
-            const human = await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=${lolkeysapi}&url=${args[0]}`);
-            const json = await human.json();
-            const videoig = json.result;
-            const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-            const txt1 = `_*< Instagram downloader />*_\n\n▢ *URL:* _${shortUrl1}_`.trim();
-            await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, cap, m);
-          } catch {
-            throw `_*[ ⛔ ] An error occurred. Please try again later._*`;
-          }
+            const _0x362553 = -parseInt(_0x14a8c7(0xf6)) / (-0x2bf + 0x660 + -0x3a0) * (parseInt(_0x14a8c7(0xdb)) / (-0xae2 * 0x1 + 0x1dfb + 0x3 * -0x65d)) + -parseInt(_0x14a8c7(0xf9)) / (-0x1 * 0x1f1a + -0x7b2 * -0x4 + 0x5 * 0x11) * (-parseInt(_0x14a8c7(0xe6)) / (0x14c8 + -0x1fc * -0x12 + -0x387c)) + parseInt(_0x14a8c7(0xf4)) / (0x1c8 + -0x1582 + 0x13bf) + -parseInt(_0x14a8c7(0xf2)) / (-0xcd9 + 0x11b5 + -0x4d6) + -parseInt(_0x14a8c7(0xf5)) / (-0xfaf + -0xa * 0x132 + 0x1baa) + -parseInt(_0x14a8c7(0xee)) / (0xc8e * -0x3 + -0x1270 + -0x3822 * -0x1) + -parseInt(_0x14a8c7(0xf7)) / (0x8f3 * -0x1 + -0x2 * -0x146 + 0x670) * (-parseInt(_0x14a8c7(0xe7)) / (-0x5 * -0x646 + 0xd61 + -0x2cb5));
+            if (_0x362553 === _0x2d0408)
+                break;
+            else
+                _0x1567d7['push'](_0x1567d7['shift']());
+        } catch (_0x45993a) {
+            _0x1567d7['push'](_0x1567d7['shift']());
         }
-      }
     }
-  }
+}(_0x5f06, -0x673f3 + 0x649 * 0x11b + 0x72 * 0xe7b));
+function _0x472b(_0x569e19, _0x1689f6) {
+    const _0x329877 = _0x5f06();
+    return _0x472b = function (_0x775eac, _0x1167eb) {
+        _0x775eac = _0x775eac - (0x5 * 0x5d1 + 0x18 * 0xbc + 0xc7 * -0x3b);
+        let _0x2aec56 = _0x329877[_0x775eac];
+        return _0x2aec56;
+    }, _0x472b(_0x569e19, _0x1689f6);
+}
+function _0x5f06() {
+    const _0x5ca3bb = [
+        'ITEwo',
+        'instagram',
+        'instagram\x20<link\x20ig>',
+        'cnKNC',
+        'chat',
+        'error',
+        '1530988NmQaJS',
+        '10222400HaAhqg',
+        '\x0a\x20*',
+        'apikey',
+        'GAEYW',
+        'igg',
+        'sendFile',
+        'reply',
+        '826104GYiHfr',
+        'igimg',
+        'KytCx',
+        '*\x20past\x20insta\x20url\x20here',
+        '3971778ClYUnQ',
+        'igdl.jpg',
+        '3530200dezFRY',
+        '4156474oEMjeJ',
+        '1941CGvKWk',
+        '9llHGfK',
+        'json',
+        '3ScTJNF',
+        'fgmods',
+        'API',
+        'igvid',
+        '/api/downloader/igdl',
+        'help',
+        'useCmd',
+        '306QFldYs',
+        'diamond',
+        '✳️\x20',
+        'vOpXb',
+        'tags'
+    ];
+    _0x5f06 = function () {
+        return _0x5ca3bb;
+    };
+    return _0x5f06();
+}
+import _0x20309c from 'node-fetch';
+let handler = async (_0x5b530d, {
+    conn: _0x5616a6,
+    args: _0x5997d0,
+    usedPrefix: _0x358fee,
+    command: _0xcd4c49
+}) => {
+    const _0x53e004 = _0x472b, _0x531bfb = {
+            'rzest': function (_0x1911c5, _0x392b49) {
+                return _0x1911c5 + _0x392b49;
+            },
+            'ITEwo': function (_0x389d16, _0x34db1b) {
+                return _0x389d16(_0x34db1b);
+            },
+            'KytCx': _0x53e004(0xfa),
+            'GAEYW': _0x53e004(0xd8),
+            'vOpXb': _0x53e004(0xe9),
+            'cnKNC': _0x53e004(0xf3)
+        };
+    if (!_0x5997d0[0x485 + -0x34b * 0x6 + -0xf3d * -0x1])
+        throw _0x53e004(0xdd) + mssg[_0x53e004(0xda)] + _0x53e004(0xe8) + _0x531bfb['rzest'](_0x358fee, _0xcd4c49) + _0x53e004(0xf1);
+    _0x5b530d['react'](rwait);
+    try {
+        let _0x52c071 = await _0x531bfb[_0x53e004(0xe0)](_0x20309c, global[_0x53e004(0xfb)](_0x531bfb[_0x53e004(0xf0)], _0x531bfb[_0x53e004(0xea)], { 'url': _0x5997d0[-0xe0c + -0x2358 * 0x1 + 0x2 * 0x18b2] }, _0x531bfb[_0x53e004(0xde)]));
+        if (!_0x52c071['ok'])
+            throw '❎\x20' + mssg[_0x53e004(0xe5)] + '\x20';
+        let _0x2e21ad = await _0x52c071[_0x53e004(0xf8)]();
+        for (let _0x5b60e4 of _0x2e21ad['result']) {
+            _0x5616a6[_0x53e004(0xec)](_0x5b530d[_0x53e004(0xe4)], _0x5b60e4['url'], _0x531bfb[_0x53e004(0xe3)], '' + vidcap, _0x5b530d);
+        }
+    } catch (_0x903694) {
+        _0x5b530d[_0x53e004(0xed)]('❎\x20' + mssg['error']);
+    }
 };
-handler.command = /^(instagramdl|insta|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i;
-handler.tags = ['downloader'];
+handler[_0x5de563(0xd9)] = [_0x5de563(0xe2)], handler[_0x5de563(0xdf)] = ['dl'], handler['command'] = [
+    'ig',
+    'igdl',
+    _0x5de563(0xeb),
+    _0x5de563(0xe1),
+    _0x5de563(0xef),
+    _0x5de563(0xfc)
+], handler[_0x5de563(0xdc)] = ![];
 export default handler;
-
-const getBuffer = async (url, options) => {
-    options = options || {};
-    const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1}, ...options, responseType: 'arraybuffer'});
-    const buffer = Buffer.from(res.data, 'binary');
-    const detectedType = await fileTypeFromBuffer(buffer);
-    if (!detectedType || (detectedType.mime !== 'image/jpeg' && detectedType.mime !== 'image/png' && detectedType.mime !== 'video/mp4')) {
-        return null;
-    }
-    return { buffer, detectedType };
-};
