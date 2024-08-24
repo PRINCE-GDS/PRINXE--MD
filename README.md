@@ -32,15 +32,18 @@
 
 ### 𝘾𝙇𝙄𝘾𝙆 𝘼𝙉𝘿 𝙒𝘼𝙄𝙏 𝙏𝙊 𝙊𝙋𝙀𝙉 𝙏𝙃𝙀 𝙎𝙄𝙏𝙀
 
-
-
 ### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 1
 <p align="left">
-<a href="https://gds-md-pair.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-green?style=for-the-badge&logo=render"></a>
+<a href="https://prince-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-pink?style=for-the-badge&logo=render"></a>
+<p/>
+
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
+<p align="left">
+<a href="https://gds-md-pair.onrender.com/pair"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-green?style=for-the-badge&logo=render"></a>
 <p/>
 
 
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 3
 <p align="left">
 <a href="https://princebotzsession.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-skyblue?style=for-the-badge&logo=render"></a>
 <p/>
