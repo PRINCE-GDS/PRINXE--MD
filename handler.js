@@ -737,24 +737,22 @@ export async function groupsUpdate(groupsUpdate) {
 export async function callUpdate(callUpdate) {
     let isAnticall = global.db.data.settings[this.user.jid].antiCall;  
     if (!isAnticall) return;
-    global.db.data.callWarnings = global.db.data.callWarnings || {};
+    
     for (let nk of callUpdate) { 
         if (!nk.isGroup) {
             if (nk.status === "offer") {
-                await conn.rejectCall(nk.id, nk.from);
-                let warnings = global.db.data.callWarnings[nk.from] || 0;
-                warnings += 1;
-                if (warnings < 3) {
-                    global.db.data.callWarnings[nk.from] = warnings;
-                    let warningMessage = `⚠️Warning *${warnings}/2:* *You attempted to call* *@${nk.from.split('@')[0]}*. ${nk.isVideo ? '*Video calls are not allowed.*' : '*Voice calls are not allowed.*'} *You will be blocked if you call again.*`;
-                    await this.reply(nk.from, warningMessage, false, { mentions: [nk.from] });
-                } else {
-                    let blockMessage = process.env.ANTICALL_MSG || '*You have been blocked for attempting to call too many times.*';
-                    await this.reply(nk.from, blockMessage, false, { mentions: [nk.from] });
-                    await this.updateBlockStatus(nk.from, 'block');
-                    await this.sendContact(nk.from, global.owner, blockMessage);
-                    delete global.db.data.callWarnings[nk.from];
-                }
+                await this.rejectCall(nk.id, nk.from);
+               
+                let callmsg = await this.reply(
+                    nk.from, 
+                    `You attempted to call *@${nk.from.split('@')[0]}*. ${nk.isVideo ? 'Video calls are not allowed.' : 'Voice calls are not allowed.'} You will be blocked.`,
+                    false, 
+                    { mentions: [nk.from] }
+                );
+
+                await this.updateBlockStatus(nk.from, 'block');
+
+                await this.sendContact(nk.from, global.owner, callmsg);
             }
         }
     }
