@@ -1,7 +1,12 @@
 import JavaScriptObfuscator from 'javascript-obfuscator'
 
 let handler = async(m, { conn, text }) => {
-if (!text) return m.reply(`🚩*${mssg.example} Past the code you want to encrypt*`) 
+if (!text && !(m.quoted && m.quoted.text)) {
+if (!text) return m.reply(`🚩 *${mssg.example}* Past the code you want to encrypt`) 
+ }
+  if (!text && m.quoted && m.quoted.text) {
+    text = m.quoted.text;
+  }
 function obfuscateCode(code) {
   return JavaScriptObfuscator.obfuscate(code, { compact: false, controlFlowFlattening: true, deadCodeInjection: true, simplify: true, numbersToExpressions: true }).getObfuscatedCode();
 }
