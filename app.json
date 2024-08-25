@@ -9,7 +9,7 @@
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "917705895455;MANNO-BLOUCH"
+      "value": "MANNO"
       },
      "MODE": {
       "description": "mode public or private",
@@ -39,7 +39,7 @@
     "BOT_NAME": {
       "description": "Put your BOT a name",
       "required": true,
-      "value": "💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌"
+      "value": "「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」"
       },
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
@@ -49,7 +49,12 @@
     "DL_MSG": {
       "description": "Video downloader caption",
       "required": true,
-      "value": "💌--------------------𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿----------------------💌"
+      "value": "💌--------------------「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」----------------------💌"
+      },
+    "ANTICALL_MSG": {
+      "description": "Put your message here for anticall feature",
+      "required": true,
+      "value": "YOU HAVE BEEN BLOCKED FOR FOR CALLING THE BOT TO MANY TIMES\n\nTO UNBLOCK YOURSELF CONTACT THE OWNER OF THIS BOT"
        },
     "STATUSVIEW": {
       "description": "Make it true if you want bot to view status",
