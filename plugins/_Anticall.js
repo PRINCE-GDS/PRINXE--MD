@@ -20,7 +20,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }
     // If a message type is found, send a message to the chat.
     if (messageType) {
         // Reject the incoming call.
-        await conn.rejectCall(m.id, m.from); // Reject the call here.
+        //await conn.rejectCall(m.id, m.from); // Reject the call here.
 
         // Send a message mentioning the sender and the message type.
         await this.sendMessage(m.chat, { text: `You are banned + blocked for calling the bot`, mentions: [m.sender] });
