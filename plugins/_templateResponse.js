@@ -1,4 +1,4 @@
-/*const {
+const {
     proto,
     generateWAMessage,
     areJidsSameUser
@@ -9,9 +9,20 @@ export async function all(m, chatUpdate) {
         return
     if (!m.message)
         return
-    if (!(m.message.buttonsResponseMessage || m.message.templateButtonReplyMessage || m.message.listResponseMessage))
-        return
-    let id = m.message.buttonsResponseMessage?.selectedButtonId || m.message.templateButtonReplyMessage?.selectedId || m.message.listResponseMessage?.singleSelectReply?.selectedRowId
+    if (!(m.message.buttonsResponseMessage || m.message.templateButtonReplyMessage || m.message.listResponseMessage || m.message.interactiveResponseMessage)) {
+    return
+  }
+  
+    let id
+  if (m.message.buttonsResponseMessage) {
+    id = m.message.buttonsResponseMessage.selectedButtonId
+  } else if (m.message.templateButtonReplyMessage) {
+    id = m.message.templateButtonReplyMessage.selectedId
+  } else if (m.message.listResponseMessage) {
+    id = m.message.listResponseMessage.singleSelectReply?.selectedRowId
+  } else if (m.message.interactiveResponseMessage) {
+    id = JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id
+  }
     let text = m.message.buttonsResponseMessage?.selectedDisplayText || m.message.templateButtonReplyMessage?.selectedDisplayText || m.message.listResponseMessage?.title
     let isIdMessage = false, usedPrefix
     for (let name in global.plugins) {
@@ -77,4 +88,4 @@ export async function all(m, chatUpdate) {
         type: 'append'
     }
     this.ev.emit('messages.upsert', msg)
-}*/
+}
