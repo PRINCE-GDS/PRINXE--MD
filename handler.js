@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
                 if (!("self" in settings)) settings.self = false
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
-	       // if (!('anticall' in settings)) settings.antiCall = true
+	        if (!('anticall' in settings)) settings.antiCall = true
                 if (!("restartDB" in settings)) settings.restartDB = 0
                 if (!("status" in settings)) settings.status = 0
 		if (!('solopv' in settings)) settings.solopv = false // el bot responde solo por dm
@@ -185,7 +185,7 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: false,
                 restrict: false,
-	      //  antiCall: true,
+	        antiCall: true,
                 restartDB: 0,
 		solopv: false, 
                 sologp: false,
