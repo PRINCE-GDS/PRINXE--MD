@@ -22,7 +22,10 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
-     case 'jarvis':
+   
+	  
+	  
+	  case 'jarvis':
      case 'autotalk':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -31,7 +34,9 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
           }}
       chat.jarvis = isEnable
      break
-	case 'pmblocker':
+	
+	  
+	  case 'pmblocker':
 	case 'pbm':
 isAll = true
 if (!isROwner) {
@@ -40,7 +45,9 @@ throw false
 }
 bot.pmblocker = isEnable
 break	  
-case 'autobio':
+
+	  
+ case 'autobio':
   isAll = true
   if (!isROwner) {
   global.dfail('rowner', m, conn)
@@ -48,7 +55,10 @@ case 'autobio':
   }
   bot.autoBio = isEnable
   break	 
-      case 'detect':
+   
+	  
+	  
+     case 'detect':
       case 'detector':
         if (!m.isGroup) {
          if (!isOwner) {
@@ -61,7 +71,9 @@ case 'autobio':
        }
        chat.detect = isEnable
      break
-      case 'autosticker':
+    
+	  
+     case 'autosticker':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
@@ -70,6 +82,9 @@ case 'autobio':
       }
       chat.autosticker = isEnable
       break
+      
+	  
+	  
       case 'antispam':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -79,7 +94,9 @@ case 'autobio':
       }
       chat.antiSpam = isEnable
       break
-    case 'antidelete':
+   
+	  
+   case 'antidelete':
     case 'delete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -89,7 +106,9 @@ case 'autobio':
       }
       chat.delete = !isEnable
       break
-      case 'antitoxic':
+  
+	  
+    case 'antitoxic':
     case 'antibadword':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -100,6 +119,7 @@ case 'autobio':
       chat.antiToxic = isEnable
       break
 
+		  
     case 'document':
     case 'documento':
     if (m.isGroup) {
@@ -107,7 +127,9 @@ case 'autobio':
       }
     chat.useDocument = isEnable
     break
-    case 'autostatus':
+ 
+	  
+	  case 'autostatus':
       isAll = true
       if (!isROwner) {
         global.dfail('rowner', m, conn)
@@ -116,6 +138,7 @@ case 'autobio':
       chat.viewStory = isEnable
       break
 
+		  
     case 'antilink':
     case 'antilinkwa':
     case 'antilinkwha':
@@ -127,7 +150,9 @@ case 'autobio':
       }
       chat.antiLink = isEnable
       break
-      
+
+
+		  
       case 'antibotclone':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -138,6 +163,7 @@ case 'autobio':
       chat.antiBotClone = isEnable
       break
 
+		  
       case 'nsfw':
       case '+18':
        if (m.isGroup) {
@@ -148,11 +174,13 @@ case 'autobio':
     chat.nsfw = isEnable          
     break
 
+		  
     case 'autolevelup':
     isUser = true
      user.autolevelup = isEnable
      break
-     
+
+		  
      case 'chatbot':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -162,7 +190,8 @@ case 'autobio':
       }
       chat.chatbot = isEnable
       break
-     
+
+		  
     case 'restrict':
     case 'restringir':
       isAll = true
@@ -172,7 +201,9 @@ case 'autobio':
       }
       bot.restrict = isEnable
       break
-      case 'autotype':
+   
+	  
+	case 'autotype':
     case 'alwaysonline':
       isAll = true
       if (!isOwner) {
@@ -181,7 +212,8 @@ case 'autobio':
       }
       chat.autotype = isEnable
       break
-      
+
+		  
       case 'anticall':
         case 'nocall':
           isAll = true
@@ -220,7 +252,9 @@ case 'autobio':
       //global.opts['sologp'] = isEnable
       bot.sologp = isEnable
       break
-      
+
+
+		  
     default:
      if (!/[01]/.test(command)) return m.reply(`
 ╭━⊱⊱⊱『 *🪩ᴏɴ/ᴏғғ ᴍᴇɴᴜ🪩* 』⊱⊱⊱━╮
