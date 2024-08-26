@@ -1,68 +1,23 @@
-import fetch from 'node-fetch';
-import axios from 'axios';
 
+import fetch from 'node-fetch'
 export async function before(m, { conn }) {
-  try {
-    if (m.isBaileys && m.fromMe) {
-      return true;
-    }
+if (m.isBaileys && m.fromMe)
+        return !0
+    if (!m.isGroup) return !1
+    let user = global.db.data.users[m.sender]
+    let lang = user.language
     
-    if (!m.isGroup) {
-      return false;
-    }
-
-    const users = global.db.data.users;
-    const chats = global.db.data.chats;
-
-    const user = global.db.data.users[m.sender];
-    const chat = global.db.data.chats[m.chat];
-    let name = conn.getName(m.sender)
-    if (m.mtype === 'protocolMessage' || m.mtype === 'pollUpdateMessage' || m.mtype === 'reactionMessage' || m.mtype === 'stickerMessage') {
-      return;
-    }
-
-    if (!m.msg   || !m.message || m.key.remoteJid !== m.chat || users[m.sender].banned || chats[m.chat].isBanned) {
-      return;
-    }
-
-    if (!m.quoted ||!m.quoted.isBaileys) return
-
-    if (!chat.chatbot) { 
-      return true;
-    }
-    
-    const msg = encodeURIComponent(m.text);
-    console.log(msg)
-    
-    const response = await axios.post('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDJC5a882ruaC4XL6ejY1yhgRkN-JNQKg8', {
-        contents: [{
-          parts: [{
-            text: msg
-          }]
-        }]
-      });
-
-    const data = response.data;
-    if (data.candidates && data.candidates.length > 0) {
-        const candidate = data.candidates[0];
-      const content = candidate.content;
-
-      
-      let reply = content.parts[0].text; 
-      if (reply) {
-        reply = reply.replace(/Google/gi, 'Guru');
-        reply = reply.replace(/a large language model/gi, botname);
-    
-    m.reply(reply);
-        }
-    
-      } else {
-        
-        m.reply("No suitable response from the API.");
-    
+      if (!user.chatbot)
+        return !0
+        try {
+        let res = await fetch('https://api.simsimi.vn/v1/simtalk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `text=${encodeURIComponent(m.text)}&lc=${lang}&key=`
+  })
+  let json = await res.json()
+  m.reply(json.message.replace('simsimi', `${princebot}`).replace('Simsimi', `${princebot}`).replace('sim simi', `${princebot}`))
+      } catch {
+        m.reply(`❎ SimSimimi API Crashed!!\n\nDisable chatbot with */off chatbot*`)
       }
-  } catch (error) {
-    console.log(error);
-    
-  }
 }
