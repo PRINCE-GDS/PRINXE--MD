@@ -1,4 +1,4 @@
-FROM https://quay.io/gurusensei/gurubhay:latest
+FROM quay.io/gurusensei/gurubhay:latest
 
 RUN git clone https://github.com/PRINCE-GDS/PRINXE-MD /root/prinxe
 
