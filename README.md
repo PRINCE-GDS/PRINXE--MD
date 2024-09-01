@@ -34,7 +34,7 @@
 
 ### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 1
 <p align="left">
-<a href="https://prince-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-pink?style=for-the-badge&logo=render"></a>
+<a href="https://prince-bot-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-pink?style=for-the-badge&logo=render"></a>
 <p/>
 
 ### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
