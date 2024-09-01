@@ -1,20 +1,11 @@
+FROM quay.io/prinxegds/prinxebhay:latest
 
-FROM node:lts-buster
+RUN git clone https://github.com/PRINCE-GDS/PRINXE-MD /root/prinxe
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+WORKDIR /root/prinxe/
 
-COPY package.json .
+RUN npm install --platform=linuxmusl
 
-RUN npm install && npm install qrcode-terminal
-
-COPY . .
-
-EXPOSE 3000
+EXPOSE 5000
 
 CMD ["npm", "start"]
