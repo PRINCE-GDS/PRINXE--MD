@@ -41,6 +41,11 @@
       "required": true,
       "value": "🔮𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🔮"
       },
+    "PACK_NAME": {
+      "description": "Put your stickers pack name",
+      "required": false,
+      "value": "Prince🎗️❣️"
+      },
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
       "required": false,
