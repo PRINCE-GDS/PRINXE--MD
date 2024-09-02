@@ -37,22 +37,7 @@
 <a href="https://prince-bot-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-pink?style=for-the-badge&logo=render"></a>
 <p/>
 
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
-<p align="left">
-<a href="https://gds-md-pair.onrender.com/pair"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-green?style=for-the-badge&logo=render"></a>
-<p/>
 
-
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 3
-<p align="left">
-<a href="https://princebotzsession.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-skyblue?style=for-the-badge&logo=render"></a>
-<p/>
-  
-
-### 𝙌𝙍 𝙎𝘾𝘼𝙉
-<p align="left">
-<a href="https://princebotqr.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-red?style=for-the-badge&logo=render"></a>
-<p/>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
