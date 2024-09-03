@@ -1,6 +1,6 @@
-
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-	
+let pp = ''
+m.react('⏳')
 	let _muptime
     if (process.send) {
       process.send('uptime')
@@ -10,11 +10,32 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }) * 1000
     }
     let muptime = clockString(_muptime)
-   m.reply(`🏮 *Bot active duration*  \n\n${muptime}`) 
+    let str = `🟢ᴘʀɪɴᴄᴇ ᴍᴅ ᴜᴘᴛɪᴍᴇ\n\n🎗️ʙᴏᴛ ᴀᴄᴛɪᴠᴇ ᴅᴜʀᴀᴛɪᴏɴ\n *${muptime}⏰*`
+    conn.sendMessage(m.chat, {
+      text: str,
+      contextInfo: {
+      
+      mentionedJid: [m.sender],
+      isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363199257221654@newsletter',
+                newsletterName: global.author,
+                serverMessageId: -1
+            },
+      forwardingScore: 999,
+      externalAdReply: {
+      title: "🎗️ᴘʀɪɴᴄᴇ ᴍᴅ🎗️",
+      body: "ʀᴜɴɪɴɢ sɪɴᴄᴇ",
+      thumbnailUrl: pp,
+      sourceUrl: '',
+      mediaType: 1,
+      renderLargerThumbnail: true
+      }}})
+      m.react('✅')
 }
 handler.help = ['runtime']
 handler.tags = ['main']
-handler.command = ['runtime', 'uptime']
+handler.command = ['runtime', 'uptime', 'run']
 export default handler
 
 function clockString(ms) {
