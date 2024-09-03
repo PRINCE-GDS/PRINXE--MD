@@ -25,7 +25,7 @@
 </p>
 
 
- <h1 align="center">🪀𝑷𝑹𝑰𝑵𝑪𝑬-𝑴𝑫-𝑩𝑶𝑻🪀</h1>
+ <h1 align="center">💠𝑷𝑹𝑰𝑵𝑪𝑬-𝑴𝑫-𝑩𝑶𝑻💠</h1>
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
@@ -35,6 +35,11 @@
 ### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 
 <p align="left">
 <a href="https://prince-bot-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-skyblue?style=for-the-badge&logo=render"></a>
+<p/>
+
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
+<p align="left">
+<a href="https://comparative-etti-secktor-455a93b0.koyeb.app/"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-green?style=for-the-badge&logo=render"></a>
 <p/>
 
 
