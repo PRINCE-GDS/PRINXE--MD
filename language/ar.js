@@ -73,6 +73,14 @@ const translations = {
     useCmd: 'استخدام الأمر',
     noNum: 'يرجى إدخال أرقام فقط',
     random: 'عشوائي',
+    comments: 'التعليقات',
+    likes: 'يحب',
+    shares: 'الاسهم',
+    favorite: 'المفضله',
+    auth: 'كاتب',
+    plink: 'توفير رابط',
+    media: 'وسائط',
+        
 
     purse: 'محفظة',
     dmd: 'ألماس',
