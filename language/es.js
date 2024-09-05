@@ -73,7 +73,14 @@ const translations = {
     useCmd: 'Uso del comando',
     noNum: 'Ingrese solo numeros',
     random: 'Random',
-
+    comments: 'Comentarios',
+    likes: 'Le gusta',
+    shares: 'Acciones',
+    favorite: 'Favorito',
+    auth: 'Autor',
+    plink: 'Proporcionar un enlace',
+    media: 'Medio',
+        
     purse: 'Monedero',
     dmd: 'Diamantes',
     money: 'Coins',
