@@ -73,6 +73,14 @@ const translations = {
     useCmd: 'کمانڈ کا استعمال',
     noNum: 'صرف نمبر درج کریں',
     random: 'تصادفی',
+    comments: 'تبصرے',
+    likes: 'پسند',
+    shares: 'حصص',
+    favorite: 'پسندیدہ',
+    auth: 'مؤلف',
+    plink: 'ایک لنک فراہم کریں',
+    media: 'میڈیا',
+        
 
     purse: 'پرس',
     dmd: 'ہیرے',
