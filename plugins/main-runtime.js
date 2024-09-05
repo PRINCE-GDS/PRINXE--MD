@@ -29,7 +29,7 @@ m.react('⏳')
       thumbnailUrl: pp,
       sourceUrl: '',
       mediaType: 1,
-      renderLargerThumbnail: true
+      renderLargerThumbnail: false
       }}})
       m.react('✅')
 }
