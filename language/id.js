@@ -73,6 +73,14 @@ const translations = {
     useCmd: 'Penggunaan perintah',
     noNum: 'Masukkan hanya angka',
     random: 'Acak',
+    comments: 'Komentar',
+    likes: 'Suka',
+    shares: 'Saham',
+    favorite: 'Kesayangan',
+    auth: 'Pengarang',
+    plink: 'Berikan tautan',
+    media: 'Media',
+        
 
     purse: 'Dompet',
   dmd: 'Berlian',
