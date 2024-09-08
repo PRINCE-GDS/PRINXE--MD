@@ -7,5 +7,5 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['getjid']
 handler.tags = ['tools']
-handler.command = ['getjid']
+handler.command = ['jid']
 export default handler
