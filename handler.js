@@ -125,7 +125,7 @@ export async function handler(chatUpdate) {
                 if (!("antiLink" in chat)) chat.antiLink = false
                 if (!("antiSticker" in chat)) chat.antiSticker = false
                 if (!("antiToxic" in chat)) chat.antiToxic = false
-		//if (!('anticall' in chat)) chat.antiCall = false
+		if (!('anticall' in chat)) chat.antiCall = false
                 if (!("detect" in chat)) chat.detect = false
                 if (!("getmsg" in chat)) chat.getmsg = true
                 if (!("isBanned" in chat)) chat.isBanned = false
@@ -146,7 +146,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {
                     antiDelete: true,
                     antiLink: false,
-                    //antiCall: false,
+                    antiCall: false,
                     antiSticker: false,
                     antiToxic: false,
 		    antiBotClone: false,
@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
                 if (!("self" in settings)) settings.self = false
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
-	        if (!('anticall' in settings)) settings.antiCall = true
+	        if (!('anticall' in settings)) settings.antiCall = false
                 if (!("restartDB" in settings)) settings.restartDB = 0
                 if (!("status" in settings)) settings.status = 0
 		if (!('solopv' in settings)) settings.solopv = false // el bot responde solo por dm
@@ -185,7 +185,7 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: false,
                 restrict: false,
-	        antiCall: true,
+	        antiCall: false,
                 restartDB: 0,
 		solopv: false, 
                 sologp: false,
@@ -731,34 +731,6 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-
-/*anticall*/
-
-export async function callUpdate(callUpdate) {
-    let isAnticall = global.db.data.settings[this.user.jid].antiCall;  
-    if (!isAnticall) return;
-    global.db.data.callWarnings = global.db.data.callWarnings || {};
-    for (let nk of callUpdate) { 
-        if (!nk.isGroup) {
-            if (nk.status === "offer") {
-                await conn.rejectCall(nk.id, nk.from);
-                let warnings = global.db.data.callWarnings[nk.from] || 0;
-                warnings += 1;
-                if (warnings < 3) {
-                    global.db.data.callWarnings[nk.from] = warnings;
-                    let warningMessage = `⚠️Warning *${warnings}/2:* *You attempted to call* *@${nk.from.split('@')[0]}*. ${nk.isVideo ? '*Video calls are not allowed.*' : '*Voice calls are not allowed.*'} *You will be blocked if you call again.*`;
-                    await this.reply(nk.from, warningMessage, false, { mentions: [nk.from] });
-                } else {
-                    let blockMessage = process.env.ANTICALL_MSG || '*You have been blocked for attempting to call too many times.*';
-                    await this.reply(nk.from, blockMessage, false, { mentions: [nk.from] });
-                    await this.updateBlockStatus(nk.from, 'block');
-                    await this.sendContact(nk.from, global.owner, blockMessage);
-                    delete global.db.data.callWarnings[nk.from];
-                }
-            }
-        }
-    }
-}
 
 
 /**
