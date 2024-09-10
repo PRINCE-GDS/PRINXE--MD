@@ -32,19 +32,19 @@
 
 ### 𝘾𝙇𝙄𝘾𝙆 𝘼𝙉𝘿 𝙒𝘼𝙄𝙏 𝙏𝙊 𝙊𝙋𝙀𝙉 𝙏𝙃𝙀 𝙎𝙄𝙏𝙀
 
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 1
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 1 ⛔ on fixing process....
 <p align="left">
 <a href="https://prince-bot-pairing-code.onrender.com"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-skyblue?style=for-the-badge&logo=render"></a>
 <p/>
 
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 2 ⛔ on fixing process...
 <p align="left">
 <a href="https://comparative-etti-secktor-455a93b0.koyeb.app/"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-green?style=for-the-badge&logo=render"></a>
 <p/>
 
-### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 3
+### 𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 3 This one working for now try this✅
 <p align="left">
-<a href="https://8wwxl9-8000.csb.app/"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-red?style=for-the-badge&logo=render"></a>
+<a href="https://pairing-code-7oa0.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/𝗦𝗘𝗦𝗦𝗜𝗢𝗡-red?style=for-the-badge&logo=render"></a>
 <p/>
 
 
