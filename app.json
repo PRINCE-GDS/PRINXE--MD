@@ -1,15 +1,15 @@
 {
-  "name": "PRINXE-MD",
-  "description": "PRINXE-MD A SUPER WHATSAPP USER BOT",
+  "name": "MANNO-MD",
+  "description": "MANNO-MD A SUPER WHATSAPP USER BOT",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
-  "repository": "https://github.com/PRINCE-GDS/PRINXE-MD",
+  "repository": "https://github.com/Itxmanno05/MANNO-MD",
   
   "stack": "container",
   "env": {
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "923092668108;Prince"
+      "value": "923094029835;➥⃟⟣𝐒ᴀͥɪᴍ 𝐀ʟɪ 𝐊ʜᷧᴀͫɴ⟢⃟❑𓃮"
       },
      "MODE": {
       "description": "mode public or private",
@@ -39,12 +39,12 @@
     "BOT_NAME": {
       "description": "Put your BOT a name",
       "required": true,
-      "value": "🔮𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🔮"
+      "value": "「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」"
       },
     "PACK_NAME": {
       "description": "Put your stickers pack name",
       "required": false,
-      "value": "Prince🎗️❣️"
+      "value": "MANNO 💌"
       },
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
@@ -54,7 +54,7 @@
     "DL_MSG": {
       "description": "Video downloader caption",
       "required": true,
-      "value": "💌--------------------ᴘʀɪɴᴄᴇ-ᴍᴅ----------------------💌"
+      "value": "💌---------------「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」------------------💌"
       },
     "STATUSVIEW": {
       "description": "Make it true if you want bot to view status",
