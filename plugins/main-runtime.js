@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let pp = ''
-m.react('⏳')
+let pp = 'https://i.imgur.com/pcv6wTh.jpeg'
+m.react('💌')
 	let _muptime
     if (process.send) {
       process.send('uptime')
@@ -10,7 +10,7 @@ m.react('⏳')
       }) * 1000
     }
     let muptime = clockString(_muptime)
-    let str = `🟢ᴘʀɪɴᴄᴇ ᴍᴅ ᴜᴘᴛɪᴍᴇ\n\n🎗️ʙᴏᴛ ᴀᴄᴛɪᴠᴇ ᴅᴜʀᴀᴛɪᴏɴ\n *${muptime}⏰*`
+    let str = `*💌 MANNO-MD UPTIME*\n\*BOT ACTIVE DURATION*\n *${muptime}⏰*`
     conn.sendMessage(m.chat, {
       text: str,
       contextInfo: {
@@ -24,12 +24,12 @@ m.react('⏳')
             },
       forwardingScore: 999,
       externalAdReply: {
-      title: "🎗️ᴘʀɪɴᴄᴇ ᴍᴅ🎗️",
-      body: "ʀᴜɴɪɴɢ sɪɴᴄᴇ",
+      title: "💌 MANNO-MD 💌",
+      body: "RUNNING MANNO",
       thumbnailUrl: pp,
       sourceUrl: '',
       mediaType: 1,
-      renderLargerThumbnail: false
+      renderLargerThumbnail: true
       }}})
       m.react('✅')
 }
