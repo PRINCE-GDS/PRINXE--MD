@@ -9,7 +9,7 @@
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "923092668108;Prince"
+      "value": "923092668108;❣️Prince"
       },
      "MODE": {
       "description": "mode public or private",
@@ -35,11 +35,16 @@
       "description": "BOT will forward deleted messages if you make it true",
       "required": false,
       "value": "true"
+      },
+    "ANTI_LINK": {
+      "description": "Make true false to ON/OFF antilink",
+      "required": false,
+      "value": "true"
        },
     "BOT_NAME": {
       "description": "Put your BOT a name",
       "required": true,
-      "value": "🔮𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🔮"
+      "value": "🎡𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🎡"
       },
     "PACK_NAME": {
       "description": "Put your stickers pack name",
@@ -54,7 +59,7 @@
     "DL_MSG": {
       "description": "Video downloader caption",
       "required": true,
-      "value": "💌--------------------ᴘʀɪɴᴄᴇ-ᴍᴅ----------------------💌"
+      "value": "📥-------- *ᴘʀɪɴᴄᴇ-ᴍᴅ* --------📥"
       },
     "STATUSVIEW": {
       "description": "Make it true if you want bot to view status",
