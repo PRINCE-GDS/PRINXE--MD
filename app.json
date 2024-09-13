@@ -62,7 +62,17 @@
       "value": "📥-------- *ᴘʀɪɴᴄᴇ-ᴍᴅ* --------📥"
       },
     "STATUSVIEW": {
-      "description": "Make it true if you want bot to view status",
+      "description": "Make it true if you want the bot to auto view status",
+      "required": false,
+      "value": "false"
+      },
+    "Status_Saver": {
+      "description": "Make it true if you want the bot to auto save your contacts status",
+      "required": false,
+      "value": "false"
+      },
+    "ANTI_CALL": {
+      "description": "Make it true if you want bot to Block unknown callers",
       "required": false,
       "value": "false"
     },
