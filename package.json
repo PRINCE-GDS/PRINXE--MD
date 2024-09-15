@@ -48,7 +48,7 @@
 "api-dylux": "latest",
 "aptoide-scraper":"*",
 "awesome-phonenumber": "^2.68.0",
-"axios": "^1.4.0",
+"axios": "^1.7.7",
 "mathjs": "^11.3.0",
 "buffer":"*",
 "body-parser": "^1.20.2",
