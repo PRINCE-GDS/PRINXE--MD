@@ -560,8 +560,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://i.imgur.com/1NV9v9N.jpeg'; // Assign default image URL
-                  ppgp = 'https://i.imgur.com/1NV9v9N.jpeg'; // Assign default image URL
+                  pp = 'https://i.imgur.com/nO6CE6W.jpeg'; // Assign default image URL
+                  ppgp = 'https://i.imgur.com/lUW4w3h.jpeg'; // Assign default image URL
                 } finally {
                   let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
                     .replace('@group', await this.getName(id))
@@ -578,7 +578,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://i.imgur.com/N0jBnIp.jpeg'
+                    'https://i.imgur.com/nO6CE6W.jpeg'
                   )}`;
           
                   try {
@@ -593,7 +593,7 @@ export async function participantsUpdate({
                         title: global.botname,
                         body: "Welcome",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP',
+                        sourceUrl: 'https://chat.whatsapp.com/FbR6ZyAIYNrBMGQTHWXK05',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -615,10 +615,10 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'; // Assign default image URL
-                  ppgp = 'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'; // Assign default image URL
+                  pp = 'https://i.imgur.com/nO6CE6W.jpeg'; // Assign default image URL
+                  ppgp = 'https://i.imgur.com/lUW4w3h.jpeg'; // Assign default image URL
                 } finally {
-                  let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user')
+                  let text = (chat.sBye || this.bye || conn.bye || '𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙈𝙔 𝙂𝙍𝙊𝙐𝙋 𝙁𝙍𝙄𝙀𝙉𝘿 ♥️, @user')
                     .replace('@user', '@' + user.split('@')[0]);
           
                   let nthMember = groupMetadata.participants.length;
@@ -631,7 +631,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'
+                    'https://i.imgur.com/nO6CE6W.jpeg'
                   )}`;
           
                   try {
@@ -646,7 +646,7 @@ export async function participantsUpdate({
                         title: global.botname,
                         body: "Bye bye",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: '',
+                        sourceUrl: 'https://chat.whatsapp.com/FbR6ZyAIYNrBMGQTHWXK05',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -658,7 +658,7 @@ export async function participantsUpdate({
             }
             break;
             case "promote":
-                const promoteText = (chat.sPromote || this.spromote || conn.spromote || `${emoji.promote} @user *is now admin*`).replace("@user", "@" + participants[0].split("@")[0]);
+                const promoteText = (chat.sPromote || this.spromote || conn.spromote || `${emoji.promote} @user *𝙔𝙊𝙐𝙍𝙀 𝙉𝙊𝙒 𝘼𝙉 𝘼𝘿𝙈𝙄𝙉 𝙈𝙔 𝙁𝙍𝙄𝙀𝙉𝘿*`).replace("@user", "@" + participants[0].split("@")[0]);
                 if (chat.detect) {
                     this.sendMessage(id, {
                         text: promoteText.trim(),
@@ -667,7 +667,7 @@ export async function participantsUpdate({
                 }
                 break;
             case "demote":
-                const demoteText = (chat.sDemote || this.sdemote || conn.sdemote || `${emoji.demote} @user *demoted from admin*`).replace("@user", "@" + participants[0].split("@")[0]);
+                const demoteText = (chat.sDemote || this.sdemote || conn.sdemote || `${emoji.demote} @user *𝙔𝙊𝙐𝙍𝙀 𝙉𝙊𝙒 𝘿𝙄𝙎𝙈𝙄𝙎 𝘼𝘿𝙈𝙄𝙉 𝙇𝙄𝙎𝙏*`).replace("@user", "@" + participants[0].split("@")[0]);
                 if (chat.detect) {
                     this.sendMessage(id, {
                         text: demoteText.trim(),
