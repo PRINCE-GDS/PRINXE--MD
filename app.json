@@ -9,7 +9,7 @@
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "923092668108;❣️Prince"
+      "value": "923225294605;❣️ BADSHAH"
       },
      "MODE": {
       "description": "mode public or private",
@@ -49,7 +49,7 @@
     "PACK_NAME": {
       "description": "Put your stickers pack name",
       "required": false,
-      "value": "Prince🎗️❣️"
+      "value": "BADSHAH 🎗️❣️"
       },
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
@@ -81,7 +81,7 @@
       "required": false,
       "value": "false"
     },
-    "SESSION_ID": {
+    "SESSION_ID": {Prince~NkR3TJJR#gDdIJu_qumudOOcaHCPJz4p_PuC1RoULvcz_k2iqbY0
       "description": "put your session ID here in the box below",
       "required": true,
       "value": ""
