@@ -128,4 +128,15 @@ process.on('exit', code => {
   console.error(chalk.red(`Exited with code: ${code}`))
   console.error(chalk.red(`Bot will restart...`))
   start('main.js')
-})
+})# ____REMOVE THIS LINE AFTER RENAMING sample.env to .env ____
+DATABASE_URL=
+SESSION_ID=
+REMOVEBG_KEY=
+PREFIX=.
+MODE=public
+AutoReaction=true
+STATUSVIEW=true
+OWNERS=923357955918;PRINCE
+antidelete=true
+BOT_NAME=Prince
+DL_MSG=Here is your video
