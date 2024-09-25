@@ -145,7 +145,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     antiDelete: true,
-                    antiLink: false,
+                    antiLink: true,
                     antiCall: false,
                     antiSticker: false,
                     antiToxic: false,
@@ -162,7 +162,7 @@ export async function handler(chatUpdate) {
                     sticker: false,
                     sWelcome: "",
                     useDocument: false,
-                    viewOnce: false,
+                    viewOnce: true,
                     viewStory: false,
                     welcome: false,
                     chatbot: false
@@ -502,7 +502,7 @@ if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
 console.log(m, m.quoted, e)}
 let settingsREAD = global.db.data.settings[this.user.jid] || {}  
 if (opts['autoread']) await this.readMessages([m.key])
-if (typeof process.env.STATUSVIEW === 'undefined' || process.env.STATUSVIEW.toLowerCase() === 'false') return;
+if (typeof process.env.STATUSVIEW === 'undefined' || process.env.STATUSVIEW.toLowerCase() === 'true') return;
 if (m.key.remoteJid === 'status@broadcast')
 	await conn.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
@@ -591,7 +591,7 @@ export async function participantsUpdate({
                         title: global.botname,
                         body: "Welcome",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP',
+                        sourceUrl: 'https://wa.me/+917478172267?text=*🌸⃝⃪꯭⃮⃕⃔⎯꯭᳝֟፝֟Arbaz-Khan‌-≛⃞*',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -613,10 +613,10 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'; // Assign default image URL
-                  ppgp = 'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'; // Assign default image URL
+                  pp = 'https://i.imgur.com/jh6dVTW.jpeg'; // Assign default image URL
+                  ppgp = 'https://i.imgur.com/jh6dVTW.jpeg'; // Assign default image URL
                 } finally {
-                  let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user')
+                  let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @+917478172267')
                     .replace('@user', '@' + user.split('@')[0]);
           
                   let nthMember = groupMetadata.participants.length;
@@ -629,7 +629,7 @@ export async function participantsUpdate({
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/b86cd15e5a49014d06660.jpg'
+                    'https://i.imgur.com/jh6dVTW.jpeg'
                   )}`;
           
                   try {
