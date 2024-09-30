@@ -199,7 +199,7 @@ export async function handler(chatUpdate) {
         //if (opts["gconly"] && !m.chat.endsWith("g.us")) return
 	if (settings.solopv && m.chat.endsWith('g.us')) return  
         if (settings.sologp && !m.chat.endsWith('g.us')) return
-        if (m.chat === '120363032639627036@g.us' && m.sender !== '923092668108@s.whatsapp.net') return;
+       // if (m.chat === '120363032639627036@g.us' && m.sender !== '923092668108@s.whatsapp.net') return;
         if (opts["swonly"] && m.chat !== "status@broadcast") return
         if (typeof m.text !== "string")
             m.text = ""
@@ -508,16 +508,39 @@ if (m.key.remoteJid === 'status@broadcast')
 	await conn.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])  
-	
 
 
-if (typeof process.env.AutoReaction === 'undefined' || process.env.AutoReaction.toLowerCase() === 'false') return; 
-if (m.text.match(/(prince|a|e|o|u|i|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi)) {
+/*	    
+const Reaction = process.env.AutoReaction === 'true';
+
+if (typeof process.env.Reaction     // === 'undefined' || process.env.AutoReaction.toLowerCase() === 'false') return; 
+if (m.text.match(/(prince|a|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi)) {
 let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫", "😚", "🤭", "☺️", "✨", "🎉", "💗", "♥️", "👑", "😚", "💞", "💖", "💓", "⚡️", "🌝", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "😎", "😍", "🕊️", "🥀", "🦋", "🐣", "❤‍🩹", "♥️", "😒", "🌸", "🌈", "❣️", "✨", "🙌", "👻", "👑", "🐤", "🪽", "🌙", "💫", "🪐", "☀️", "🌪️", "🧸", "🎀", "🎉", "🪞", "🖇️", "📎", "🩷", "🖤", "🤍", "🤎", "💛", "💚", "🩵", "💙", "💜", "💟", "💓", "🩶", "😑", "😶"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
-}}
-        
+}}*/
+	    
+  const Reaction = process.env.AutoReaction === 'true';
+
+if (Reaction) {
+    // Check if the message is a text, voice note, image, or video
+    const isText = m.text && m.text.match(/(prince|a|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi);
+    const isVoiceMessage = m.audio; // Checks if it's a voice message
+    const isImage = m.message && m.message.imageMessage; // Checks if it's an image
+    const isVideo = m.message && m.message.videoMessage; // Checks if it's a video
+
+    // If any of the conditions are met, react
+    if (isText || isVoiceMessage || isImage || isVideo) {
+        let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫", "😚", "🤭", "✨", "🎉", "💗", "♥️", "👑", "💞", "💖", "💓", "⚡️", "🌝", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "😎", "😍", "🕊️", "🥀", "🦋", "🐣", "❤‍🩹", "😒", "🌸", "🌈", "❣️", "🙌", "👻", "🪞", "🖇️", "📎", "🩷", "🩶", "😑", "😶"]);
+
+        // Send the reaction
+        this.sendMessage(m.chat, { react: { text: emot, key: m.key }});
+    }
+}
+
+function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)];
+}      
     
             
 
