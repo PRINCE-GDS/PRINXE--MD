@@ -125,7 +125,7 @@ export async function handler(chatUpdate) {
                 if (!("antiLink" in chat)) chat.antiLink = false
                 if (!("antiSticker" in chat)) chat.antiSticker = false
                 if (!("antiToxic" in chat)) chat.antiToxic = false
-		if (!('anticall' in chat)) chat.antiCall = false
+		//if (!('anticall' in chat)) chat.antiCall = false
                 if (!("detect" in chat)) chat.detect = false
                 if (!("getmsg" in chat)) chat.getmsg = true
                 if (!("isBanned" in chat)) chat.isBanned = false
@@ -146,7 +146,7 @@ export async function handler(chatUpdate) {
                 global.db.data.chats[m.chat] = {
                     antiDelete: true,
                     antiLink: false,
-                    antiCall: false,
+                 //   antiCall: false,
                     antiSticker: false,
                     antiToxic: false,
 		    antiBotClone: false,
@@ -175,7 +175,7 @@ export async function handler(chatUpdate) {
                 if (!("self" in settings)) settings.self = false
                 if (!("autoread" in settings)) settings.autoread = false
                 if (!("restrict" in settings)) settings.restrict = false
-	        if (!('anticall' in settings)) settings.antiCall = false
+	       // if (!('anticall' in settings)) settings.antiCall = false
                 if (!("restartDB" in settings)) settings.restartDB = 0
                 if (!("status" in settings)) settings.status = 0
 		if (!('solopv' in settings)) settings.solopv = false // el bot responde solo por dm
@@ -185,7 +185,7 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: false,
                 restrict: false,
-	        antiCall: false,
+	   //     antiCall: false,
                 restartDB: 0,
 		solopv: false, 
                 sologp: false,
@@ -506,7 +506,7 @@ if (opts['autoread']) await this.readMessages([m.key])
 if (typeof process.env.STATUSVIEW === 'undefined' || process.env.STATUSVIEW.toLowerCase() === 'false') return;
 if (m.key.remoteJid === 'status@broadcast')
 	await conn.readMessages([m.key])
-if (settingsREAD.autoread2) await this.readMessages([m.key])  
+//if (settingsREAD.autoread2) await this.readMessages([m.key])  
 //if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])  
 
 
@@ -519,28 +519,6 @@ let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫",
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}*/
-	    
-  const Reaction = process.env.AutoReaction === 'true';
-
-if (Reaction) {
-    // Check if the message is a text, voice note, image, or video
-    const isText = m.text && m.text.match(/(prince|a|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi);
-    const isVoiceMessage = m.audio; // Checks if it's a voice message
-    const isImage = m.message && m.message.imageMessage; // Checks if it's an image
-    const isVideo = m.message && m.message.videoMessage; // Checks if it's a video
-
-    // If any of the conditions are met, react
-    if (isText || isVoiceMessage || isImage || isVideo) {
-        let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫", "😚", "🤭", "✨", "🎉", "💗", "♥️", "👑", "💞", "💖", "💓", "⚡️", "🌝", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "😎", "😍", "🕊️", "🥀", "🦋", "🐣", "❤‍🩹", "😒", "🌸", "🌈", "❣️", "🙌", "👻", "🪞", "🖇️", "📎", "🩷", "🩶", "😑", "😶"]);
-
-        // Send the reaction
-        this.sendMessage(m.chat, { react: { text: emot, key: m.key }});
-    }
-}
-
-function pickRandom(list) {
-    return list[Math.floor(Math.random() * list.length)];
-}      
     
             
 
