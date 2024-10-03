@@ -27,7 +27,7 @@ for (let i = 0; i < ownerlist.length; i += 2) {
 
 
 //💌global.pairingNumber = "" //put your bot number here💌
-global.mods = ['923042205427'] 
+global.mods = ['923094029835'] 
 global.prems = ['']
 global.allowed = ['']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
@@ -125,15 +125,15 @@ global.developer = 'https://wa.me/message/DCAK67ON3XVOG1' //contact
 
 //Sticker WM
 global.botname = process.env.BOT_NAME
-global.princebot = '🛡️𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋🛡️'
+global.princebot = '「💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌」'
 global.packname = process.env.PACK_NAME
-global.author = 'Prince♥️' 
+global.author = '「𝙈𝘼𝙉𝙉𝙊」♥️' 
 global.princeig = 'https://www.instagram.com' 
-global.princegp = 'https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11'
-global.menuvid = 'https://i.imgur.com/GFAAXqw.mp4'
-global.Princesc = 'https://github.com/PRINCE-GDS/THE-PRINCE-BOT' 
+global.princegp = 'https://chat.whatsapp.com/BNE0V8XpEZK0q4IgJ9jklM'
+global.menuvid = 'https://i.imgur.com/8E2itvZ.mp4'
+global.Princesc = 'https://github.com/Itxmanno05/THE-MANNO-MD' 
 global.princeyt = 'https://youtube.com/'
-global.Princelog = 'https://i.imgur.com/cUvIv5w.jpeg'
+global.Princelog = 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg'
 global.thumb = fs.readFileSync('./Assets/Prince.png')
 //💌------------------------------------------💌
 
@@ -141,7 +141,7 @@ global.thumb = fs.readFileSync('./Assets/Prince.png')
 
 //Reactions
 global.wait = '*📥 `𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂 𝙔𝙊𝙐𝙍 𝙁𝙄𝙇𝙀 𝙒𝘼𝙄𝙏...`*\n*▰▰▰▱▱▱▱▱*'
-global.imgs = '*🖼️ _𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 ɪᴍᴀɢᴇs 𝚆𝙰𝙸𝚃..._*\n*▰▰▰▱▱▱▱▱*'
+global.imgs = '🖼️ _𝙂𝙀𝙏𝙏𝙄𝙉𝙂 𝙔𝙊𝙐𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙒𝘼𝙄𝙏..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '♻️'
 global.dmoji = '🤭'
 global.done = '✅'
