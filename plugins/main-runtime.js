@@ -1,6 +1,8 @@
+import displayLoadingScreen from '../lib/loading.js'
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let pp = ''
-m.react('⏳')
+let pp = 'https://telegra.ph/file/d52a552a0b817753754e8.jpg'
+await displayLoadingScreen(conn, m.chat)
 	let _muptime
     if (process.send) {
       process.send('uptime')
@@ -10,7 +12,7 @@ m.react('⏳')
       }) * 1000
     }
     let muptime = clockString(_muptime)
-    let str = `🟢ᴘʀɪɴᴄᴇ ᴍᴅ ᴜᴘᴛɪᴍᴇ\n\n🎗️ʙᴏᴛ ᴀᴄᴛɪᴠᴇ ᴅᴜʀᴀᴛɪᴏɴ\n *${muptime}⏰*`
+    let str = `*あMANNO RUNTIMEあ\n\n${muptime}*`
     conn.sendMessage(m.chat, {
       text: str,
       contextInfo: {
@@ -18,24 +20,23 @@ m.react('⏳')
       mentionedJid: [m.sender],
       isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363199257221654@newsletter',
+                newsletterJid: '120363178281296360@newsletter',
                 newsletterName: global.author,
                 serverMessageId: -1
             },
       forwardingScore: 999,
       externalAdReply: {
-      title: "🎗️ᴘʀɪɴᴄᴇ ᴍᴅ🎗️",
-      body: "ʀᴜɴɪɴɢ sɪɴᴄᴇ",
+      title: "💌 𝙏𝙃𝙀-𝙈𝘼𝙉𝙉𝙊-𝙈𝘿 💌",
+      body: "R U N T I M E",
       thumbnailUrl: pp,
-      sourceUrl: '',
+      sourceUrl: 'https://telegra.ph/file/a1e3c864edf9d114e32a2.jpg',
       mediaType: 1,
-      renderLargerThumbnail: false
+      renderLargerThumbnail: true
       }}})
-      m.react('✅')
 }
 handler.help = ['runtime']
 handler.tags = ['main']
-handler.command = ['runtime', 'uptime', 'run']
+handler.command = ['runtime', 'uptime']
 export default handler
 
 function clockString(ms) {
