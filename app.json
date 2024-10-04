@@ -9,7 +9,7 @@
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "923092668108;❣️Prince"
+      "value": "918617340627;꧁༒☬☠An!k☠︎☬༒꧂"
       },
      "MODE": {
       "description": "mode public or private",
@@ -19,7 +19,7 @@
      "HKEY": {
       "description": "Put your Heroku API key Here",
       "required": true,
-      "value": ""
+      "value": "HRKU-968c6649-5ee2-409e-ac87-860d0a221d2b"
     },
      "HAPP": {
       "description": "Put the Heroku app name, same as above entered",
@@ -29,7 +29,7 @@
     "PREFIX": {
       "description": "Put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
       "required": false,
-      "value": ""
+      "value": "."
      },
     "antidelete": {
       "description": "BOT will forward deleted messages if you make it true",
@@ -49,7 +49,7 @@
     "BOT_NAME": {
       "description": "Put your BOT a name",
       "required": true,
-      "value": "🎡𝗣𝗥𝗜𝗡𝗫𝗘-𝗠𝗗🎡"
+      "value": "☠️𝗗𝗔𝗥𝗞_X-BOT👾😈⚠️"
       },
     "PACK_NAME": {
       "description": "Put your stickers pack name",
@@ -59,7 +59,7 @@
     "DATABASE_URL": {
       "description": "Put your MongoDB here",
       "required": false,
-      "value": ""
+      "value": "mongodb+srv://Anik:<db_Anik>@cluster0.uc0ue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
       },
     "DL_MSG": {
       "description": "Video downloader caption",
@@ -69,7 +69,7 @@
     "STATUSVIEW": {
       "description": "Make it true if you want the bot to auto view status",
       "required": false,
-      "value": "false"
+      "value": "true"
       },
     "Status_Saver": {
       "description": "Make it true if you want the bot to auto save your contacts status",
@@ -84,7 +84,7 @@
     "AutoReaction": {
       "description": "Make it true if you want bot to react on chats",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     "SESSION_ID": {
       "description": "put your session ID here in the box below",
