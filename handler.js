@@ -507,18 +507,19 @@ if (typeof process.env.STATUSVIEW === 'undefined' || process.env.STATUSVIEW.toLo
 if (m.key.remoteJid === 'status@broadcast')
 	await conn.readMessages([m.key])
 //if (settingsREAD.autoread2) await this.readMessages([m.key])  
-//if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])  
-
+//if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key]) 
+ 
+    }
 	    
 
-if (typeof process.env.AutoReaction === 'true')
-if (m.text.match(/(prince|a|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi)) {
+if (typeof process.env.AutoReaction === 'undefined' || process.env.AutoReaction.toLowerCase() === 'false') return;
+if (m.text.match(/(prince|a|e|i|o|u|g|q|ا|م|dad|gds|oso|love|mente|pero|tion|age|sweet|kiss|cute|ate|and|but|ify)/gi)) {
 let emot = pickRandom(["☺️", "😻", "😘", "🥰", "😱", "🤗", "🤫", "😚", "🤭", "☺️", "✨", "🎉", "💗", "♥️", "👑", "😚", "💞", "💖", "💓", "⚡️", "🌝", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💟", "🌝", "😎", "😍", "🕊️", "🥀", "🦋", "🐣", "❤‍🩹", "♥️", "😒", "🌸", "🌈", "❣️", "✨", "🙌", "👻", "👑", "🐤", "🪽", "🌙", "💫", "🪐", "☀️", "🌪️", "🧸", "🎀", "🎉", "🪞", "🖇️", "📎", "🩷", "🖤", "🤍", "🤎", "💛", "💚", "🩵", "💙", "💜", "💟", "💓", "🩶", "😑", "😶"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 
 	    
-}}
+    }
     
             
 
