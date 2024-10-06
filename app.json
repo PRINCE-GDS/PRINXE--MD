@@ -41,6 +41,11 @@
       "required": false,
       "value": "true"
       },
+    "AUTOREAD": {
+      "description": "Make true to auto check users messages",
+      "required": false,
+      "value": "true"
+      },
     "VIEWONCE": {
       "description": "Make true if wanna get view once message",
       "required": false,
