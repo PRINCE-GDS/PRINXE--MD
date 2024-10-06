@@ -501,8 +501,14 @@ export async function handler(chatUpdate) {
 if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
 } catch (e) {
 console.log(m, m.quoted, e)}
-let settingsREAD = global.db.data.settings[this.user.jid] || {}  
-if (opts['autoread']) await this.readMessages([m.key])
+let settingsREAD = global.db.data.settings[this.user.jid] || {} 
+if (process.env.AUTOREAD === 'true') {
+    try {
+        await conn.readMessages([m.key]);
+    } catch (error) {
+    }
+}
+	    
 if (typeof process.env.STATUSVIEW === 'undefined' || process.env.STATUSVIEW.toLowerCase() === 'false') return;
 if (m.key.remoteJid === 'status@broadcast')
 	await conn.readMessages([m.key])
