@@ -25,7 +25,7 @@ let handler = async (m, _2) => {
       return conn.reply(m.chat, format(...args), m)
     }, m, handler, require, conn, CustomArray, process, args, groupMetadata, f, f.exports, [conn, _2])
   } catch (e) {
-    let err = syntaxerror(_text, 'Función de ejecución', {
+    let err = syntaxerror(_text, 'Execution Function', {
       allowReturnOutsideFunction: true,
       allowAwaitOutsideFunction: true,
         sourceType: 'module'
@@ -37,9 +37,9 @@ let handler = async (m, _2) => {
     m.exp = old
   }
 }
-handler.help = ['> ', '=> ']
+handler.help = [': ', '=: ']
 handler.tags = ['advanced']
-handler.customPrefix = /^=?> /
+handler.customPrefix = /^=?: /
 handler.command = /(?:)/i
 
 handler.rowner = true
