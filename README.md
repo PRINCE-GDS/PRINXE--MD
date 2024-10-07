@@ -1,34 +1,34 @@
   
-![PRINXE-MD](https://readme-typing-svg.demolab.com?font=Garamond&size=20&pause=998&color=skyblue&background=white&right=true&random=true&width=465&lines=HELLO+EVERYONE👋🏻;WELCOME+TO+PRINCE+MD+💙)
+![PRINXE-MD](https://readme-typing-svg.demolab.com?font=Garamond&size=20&pause=998&color=skyblue&background=white&right=true&random=true&width=465&lines=HELLO+EVERYONE👋🏻;WELCOME+TO+ALI+MD+💙)
   
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 
  
  <p align="center">  
   <a href="">
-    <img alt="PRINCE" width="600" height="350" src="https://i.imgur.com/iI086tX.jpeg">
+    <img alt="ALI" width="600" height="350" src="https://i.imgur.com/CJfdYs8.jpeg">
   </a>
 </p>
 
 
 
 <p align="center">
-<a href="https://github.com/PRINCE-GDS/PRINXE-MD"><img title="Author" src="https://img.shields.io/badge/𝑷𝑹𝑰𝑵𝑪𝑬 𝑴𝑫 𝑩𝑶𝑻-black?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD"><img title="Author" src="https://img.shields.io/badge/ALI MD BOT-black?style=for-the-badge&logo=github"></a>
 <p/>
 
 <p align="center">
 <a href="https://github.com/PRINCE-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/PRINCE-GDS?label=Followers&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINXE-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/PRINCE-MD-BOT?&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINXE-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/PRINXE-MD?style=social"></a>
-<a href="https://github.com/PRINCE-GDS/PRINXE-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/PRINCE-GDS/PRINXE-MD?label=Watching&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/ALI-GDS/ALI-MD-BOT?&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/ALI-GDS/ALI-MD?style=social"></a>
+<a href="https://github.com/PRINCE-GDS/PRINXE-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ALI-GDS/ALI-MD?label=Watching&style=social"></a>
 </p>
 
 
- <h1 align="center">💠𝑷𝑹𝑰𝑵𝑪𝑬-𝑴𝑫-𝑩𝑶𝑻💠</h1>
+ <h1 align="center">💠𝘼𝙇𝙄-𝙈𝘿-𝘽𝙊𝙏💠</h1>
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 
 ### 𝘾𝙇𝙄𝘾𝙆 𝘼𝙉𝘿 𝙒𝘼𝙄𝙏 𝙏𝙊 𝙊𝙋𝙀𝙉 𝙏𝙃𝙀 𝙎𝙄𝙏𝙀
 
@@ -46,8 +46,8 @@
 
 
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
  
 ### <br>
 <p align="left">
@@ -71,19 +71,19 @@
 ### <br>
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 
 ### 🟢 𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 🟢
    <p align="left">
-      <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "30" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
+      <a href="https://whatsapp.com/channel/0029VaoRxGmJpe8lgCqT1T2h"><img height= "30" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
      <p/>
        
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 ### 𝗟𝗜𝗖𝗘𝗡𝗦𝗘: [Clikc here](https://github.com/PRINCE-GDS/PRINXE-MD/blob/main/LICENSE)
- <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-  <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+ <a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+  <a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 ### 💠 [`𝘼𝙑𝘼𝙄𝙇𝘼𝘽𝙇𝙀 𝙇𝘼𝙉𝙂𝙐𝘼𝙂𝙀𝙎 𝙁𝙊𝙍 𝙋𝙍𝙄𝙉𝘾𝙀 𝘽𝙊𝙏`]
 #### 🌐 Arabic = ar 
 #### 🌐 Urdu = ur
@@ -91,12 +91,12 @@
 #### 🌐 Bahasa Indonesia = id
 #### 🌐 Portuguese = pt
 #### 🌐 Spanish = es
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
+<a><img src='https://i.imgur.com/CJfdYs8.jpeg'/></a>
 
 
 
