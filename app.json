@@ -9,7 +9,7 @@
       "OWNERS": {
       "description": "Put your Number as Owner",
       "required": true,
-      "value": "923092668108;❣️Prince"
+      "value": "923092668xxx;❣️Prince"
       },
      "MODE": {
       "description": "mode public or private",
@@ -44,10 +44,10 @@
     "AUTOREAD": {
       "description": "Make true to auto check users messages",
       "required": false,
-      "value": "true"
+      "value": "false"
       },
     "STATUS_MESSAGE": {
-      "description": "Type your status reply message to send auto message to your contacts status",
+      "description": "Type your status reply message to send auto message to your contacts status and it will only work if bot is on public mode",
       "required": false,
       "value": "🩵ʏᴏᴜʀ sᴛᴀᴛᴜs sᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ😍\n😎ʙʏ *ᴘʀɪɴᴄᴇ ᴍᴅ* ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ🩵"
       },
