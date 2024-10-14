@@ -367,6 +367,6 @@ m.react(done)
 }
 handler.help = ['allmenu']
 handler.tags = ['main']
-handler.command = ['surahmenu', 'quranmenu', 'number'] 
+handler.command = ['surahmenu', 'quranmenu'] 
 
 export default handler
