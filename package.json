@@ -1,6 +1,6 @@
 {
-  "name": "PRINXE--MD",
-  "version": "3.0.2",
+  "name": "PRINXCE-MD-WB",
+  "version": "3.5.0",
   "description": "Multi Device WhatsApp user bot",
   "main": "index.js",
   "type": "module",
@@ -21,16 +21,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
     
-"homepage": "https://github.com/PRINCE-GDS/PRINXE--MD",
+"homepage": "https://github.com/PRINCE-GDS/PRINXCE-MD-WB",
 "author": {
-"name": "MR-DS-MD" },
+"name": "PRINXCE-MD-WB" },
     
 "repository": {
 "type": "git",
-"url": "git+https://github.com/PRINCE-GDS/PRINXE--MD.git" },
+"url": "git+https://github.com/PRINCE-GDS/PRINXCE-MD-WB.git" },
 
 "bugs": {
-"url": "https://github.com/PRINCE-GDS/PRINXE--MD/issues" },
+"url": "https://github.com/PRINCE-GDS/PRINXCE-MD-WB/issues" },
 "license": "GPL-3.0-or-later",
 
     
